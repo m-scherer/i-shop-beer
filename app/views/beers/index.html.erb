@@ -1,1 +1,11 @@
-<h1>View Test For Beers</h1>
+<h1>All Beers</h1>
+
+<ul>
+  <% @beers.each do |beer| %>
+    <li>
+      <%= beer.name %> ($<%= beer.price %>)
+    </li>
+    <%= button_to "Add to Cart", carts_path(beer_id: beer.id), class: "btn btn-primary" %>
+
+  <% end %>
+</ul>

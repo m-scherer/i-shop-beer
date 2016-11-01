@@ -23,8 +23,6 @@ describe "user experience on styles index page" do
 
     visit styles_path
     click_on("IPA")
-    save_and_open_page
-
 
     expect(page).to have_content(beer.name)
     expect(page).to have_content(beer_2.name)

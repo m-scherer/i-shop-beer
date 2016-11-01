@@ -6,9 +6,9 @@ describe Beer do
         style = Style.new(name: "IPA")
         beer = Beer.create(name: "Pliny the Elder", style: style, price: 7.00 )
 
-        visit style_beers_path(style, beer)
-        save_and_open_page
-        expect(beer).to have_content("Pliny the Elder")
+        visit beers_path
+
+        expect(page).to have_content("Pliny the Elder")
     end
   end
 end

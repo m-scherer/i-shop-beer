@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   resources :styles, only: [:index]
+  resources :beers, only: [:index]
 
   resources :styles, only: [:index], param: :slug do
     resources :beers, only: [:index]
