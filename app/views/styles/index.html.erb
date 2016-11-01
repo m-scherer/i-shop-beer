@@ -1,0 +1,4 @@
+<h1>Test Styles Index</h1>
+<% @styles.each do |style| %>
+  <li><%= link_to style.name, "/#{style.slug}" %></li>
+<% end %>
