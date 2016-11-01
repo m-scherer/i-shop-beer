@@ -5,7 +5,7 @@ class StylesController < ApplicationController
   end
 
   def show
-    @style = Style.find(params[:id])
+    @style = Style.find_by!(slug: params[:slug])
     @beers = Beer.where(style: @style)
   end
 end
