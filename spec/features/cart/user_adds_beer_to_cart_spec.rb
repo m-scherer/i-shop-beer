@@ -6,8 +6,8 @@ RSpec.feature "User adds beers" do
         name: "IPA"
     )
     beer = Beer.create!(
-        name: "Lunch Break"
-        price: 5.99
+        name: "Lunch Break",
+        price: 5.99,
         style: style
     )
 

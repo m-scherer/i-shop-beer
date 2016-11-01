@@ -5,8 +5,14 @@ class ApplicationController < ActionController::Base
 
   before_action :set_cart
 
+  helper_method :get_total
+
   def set_cart
-    @cart = Cart.net(session[:cart])
+    @cart = Cart.new(session[:cart])
+  end
+
+  def get_total
+    @cart.total
   end
 
 end
