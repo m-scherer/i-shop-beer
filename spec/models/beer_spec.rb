@@ -23,4 +23,13 @@ RSpec.describe Beer, type: :model do
       expect(beer).to be_valid
     end
   end
+
+  context "relationships" do
+    it "responds to style" do
+      beer = Beer.new(name: "Pliny the Elder", price: 7.00)
+
+      expect(beer).to respond_to(:style)
+      expect(beer).to_not respond_to(:styles)
+    end
+  end
 end

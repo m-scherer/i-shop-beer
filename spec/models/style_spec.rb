@@ -14,4 +14,13 @@ RSpec.describe Style, type: :model do
       expect(style).to be_valid
     end
   end
+
+  context "relationships" do
+    it "responds to beer" do
+      style = Style.new(name: "Porter")
+
+      expect(style).to respond_to(:beers)
+      expect(style).to_not respond_to(:beer)
+    end
+  end
 end
