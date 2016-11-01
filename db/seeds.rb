@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Beer.destroy_all
+Style.destroy_all
+
+BEERS = ["PBR", "Spiny the Elder", "Coors", "Heineken", "Avery IPA", "Epic IPA", "Breckenridge Lager", "Dogfish Double IPA"]
+STYLES = ["IPA", "Lager", "Stout", "Belgian", "Bock", "Pale Ale"]
+PRICES = ["4.99", "6.00", "7.11", "2.75", "4.50", "6.33", "7.25", "8.88", "9.13", "5.55"]
+
+STYLES.each do |style|
+  style = Style.create!(name: style)
+  6.times do |num|
+    style.beers.create!(name: BEERS.sample, price: PRICES.sample, style: style)
+  end
+end
