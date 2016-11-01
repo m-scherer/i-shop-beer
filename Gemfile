@@ -40,6 +40,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'launchy'
   gem 'database_cleaner'
+  gem 'pry'
 end
 
 group :development do
