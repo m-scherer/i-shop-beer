@@ -41,6 +41,7 @@ group :development, :test do
   gem 'launchy'
   gem 'database_cleaner'
   gem 'rb-readline'
+  gem 'pry'
 end
 
 group :development do
