@@ -17,7 +17,8 @@ class CartController < ApplicationController
   def remove
     cart = session[:cart]
     cart.delete(params[:id])
-    flash[:success] = "Successfully removed SOME_ITEM from cart!"
+    beer = Beer.find(params[:id])
+    flash[:success] = %Q[Successfully removed <a href="/beers/#{beer.id}">#{beer.name}</a> from cart!]
     redirect_to cart_path
   end
 

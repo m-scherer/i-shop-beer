@@ -3,7 +3,7 @@
 <ul>
   <% @beers.each do |beer| %>
     <li>
-      <%= beer.name %> ($<%= beer.price %>)
+      <%= link_to beer.name, beer_path(beer) %> ($<%= beer.price %>)
     </li>
     <%= button_to "Add to Cart", cart_path(beer_id: beer.id), class: "btn btn-primary" %>
 
