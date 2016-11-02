@@ -82,7 +82,10 @@ RSpec.feature "User views cart" do
       expect(page).to have_content("(0)")
       click_button('Add to Cart')
       click_link('cart')
-      click_button("+")
+      find(:xpath, '//option[contains(text(), 19)]').select_option
+      click_button('Update')
 
+      expect(page).to have_content("(19)")
     end
+  end
 end
