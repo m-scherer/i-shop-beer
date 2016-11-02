@@ -17,6 +17,7 @@ class CartController < ApplicationController
   def remove
     cart = session[:cart]
     cart.delete(params[:id])
+    flash[:success] = "Successfully removed SOME_ITEM from cart!"
     redirect_to cart_path
   end
 

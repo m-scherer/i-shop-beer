@@ -11,5 +11,8 @@ describe "user visits a new user page" do
 
     expect(current_path).to eq(dashboard_path)
     expect(page).to have_content("Account for brad@yahoo.com created")
+    within("#login") do
+      expect(page).to have_content("brad@yahoo.com")
+    end
   end
 end
