@@ -25,6 +25,11 @@ body{
   color: #FFFFFF;
   letter-spacing: 1.1px;
 }
+#account-create-header{
+  margin-top: 150px;
+  color: #FFFFFF;
+  letter-spacing: 1.1px;
+}
 .form-horizontal {
   width: 400px;
   margin-left: 0;
