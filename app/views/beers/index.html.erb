@@ -5,7 +5,7 @@
     <li>
       <%= beer.name %> ($<%= beer.price %>)
     </li>
-    <%= button_to "Add to Cart", carts_path(beer_id: beer.id), class: "btn btn-primary" %>
+    <%= button_to "Add to Cart", cart_path(beer_id: beer.id), class: "btn btn-primary" %>
 
   <% end %>
 </ul>

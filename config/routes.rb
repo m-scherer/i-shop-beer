@@ -7,9 +7,11 @@ Rails.application.routes.draw do
     resources :beers, only: [:index]
   end
 
-  resources :carts, only: [:create]
+  resources :cart, only: [:create]
+  get '/cart' => 'cart#show'
 
   get '/items' => 'beers#index'
   get '/:slug' => 'styles#show'
+
 
 end

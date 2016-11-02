@@ -1,4 +1,4 @@
-class CartsController < ApplicationController
+class CartController < ApplicationController
 
   def create
     beer = Beer.find(params[:beer_id])
@@ -7,5 +7,14 @@ class CartsController < ApplicationController
     flash[:notice] = "#{beer.name} added to cart!"
     redirect_to style_beers_path(beer.style)
   end
+
+  def show
+    cart = session[:cart]
+    @beers = Beer.find()
+  end
+
+  def index
+  end
+
 
 end
