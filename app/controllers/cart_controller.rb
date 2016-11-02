@@ -9,8 +9,6 @@ class CartController < ApplicationController
   end
 
   def show
-    cart = session[:cart]
-    @beers = Beer.find()
   end
 
   def index

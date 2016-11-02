@@ -1,1 +1,10 @@
 <h1>Cart Show Page</h1>
+
+  <% cart_beers.each do |beer| %>
+     <li><%= beer.name %> Quantity: <%= @cart.contents[beer.id.to_s] %></li>
+     <li>Price: $<%= beer.price %></li>
+  <% end %>
+
+
+
+Total: $<%= cart_total %>
