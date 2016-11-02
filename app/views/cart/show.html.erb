@@ -1,5 +1,4 @@
-<h1>Cart Show Page</h1>
-
+<h1>Shopping Cart</h1>
   <% cart_beers.each do |beer| %>
     <li><%= beer.name %> Quantity: <%= @cart.contents[beer.id.to_s] %></li>
      <li>Price: $<%= beer.price %></li>
@@ -7,12 +6,9 @@
       <%= select_tag :quantity, options_for_select((0..99)) %>
     <%= submit_tag "Update" %>
     <% end %>
-
     <%= button_to "Remove", cart_remove_path(beer.id), method: :delete  %>
   <% end %>
-
-
-
-
-
 Total: $<%= cart_total %>
+<% if logged_in?.nil? %>
+  <p> To checkout, <%= link_to "Log In", login_path %> or <%= link_to "Create Account", new_user_path %> </p>
+<% end %>
