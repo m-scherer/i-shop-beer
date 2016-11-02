@@ -7,13 +7,17 @@ Rails.application.routes.draw do
     resources :beers, only: [:index]
   end
 
-  resources :carts, only: [:create]
   resources :users, only: [:new, :create]
 
   get '/dashboard', to: 'dashboard#show'
 
-  get '/items' => 'beers#index'
+  resources :cart, only: [:create]
 
+  delete '/cart/remove', path: 'destroy/:id'
+  post '/cart/update', path: 'update'
+  get '/cart' => 'cart#show'
+
+  get '/items' => 'beers#index'
 
   get '/login', to: 'sessions#new', as: 'login'
   post '/login', to: 'sessions#create'
