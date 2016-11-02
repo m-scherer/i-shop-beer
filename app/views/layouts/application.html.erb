@@ -14,7 +14,12 @@
     </head>
     <body>
       <%= render partial: "layouts/navbar" %>
-      <div class="container">
+        <div class="container">
+          <% flash.each do |key, value| %>
+          <div class="alert-<%= key %>">
+            <%= value %>
+          </div>
+        <% end %>
       <%= yield %>
 
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
