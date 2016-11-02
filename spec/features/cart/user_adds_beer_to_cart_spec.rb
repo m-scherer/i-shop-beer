@@ -16,9 +16,11 @@ RSpec.feature "User adds beers" do
     expect(page).to have_content("(0)")
     click_button "Add to Cart"
 
+    expect(page).to have_content("#{beer.name} added to cart!")
     expect(page).to have_content("(1)")
     click_button "Add to Cart"
 
+    expect(page).to have_content("#{beer.name} added to cart!")
     expect(page).to have_content("(2)")
   end
 end
