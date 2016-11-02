@@ -13,8 +13,33 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body{
   background-image: url('copper-kettle.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+#login-header{
+  margin-top: 150px;
+  color: #FFFFFF;
+  letter-spacing: 1.1px;
+}
+.center-block {
+  width: 300px;
+  float: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+   text-align:center
+}
+label {
+  clear:left;
+  text-align:right;
+  padding-right:10px;
+}
+#test {
+  padding-right:10px;
 }

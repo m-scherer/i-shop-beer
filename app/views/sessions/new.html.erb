@@ -1,11 +1,23 @@
-<h2> Login </h2>
-
-<%= form_tag "/" do %>
-  <%= label_tag :email %>
-  <%= text_field_tag :email %>
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
-  <%= submit_tag "Login" %>
-<% end %>
-
-<p>If you don't have an account <%= link_to "Sign Up", new_user_path %> here</p>
+<div class="container-fluid text-center" id="login-header">
+  <h2> Login </h2>
+</div>
+<div class="container-fluid">
+  <div class="col-md-4"></div>
+  <%= form_tag "/" do %>
+    <div class="col-md-4">
+      <div class="container-fluid center-block">
+        <%= label_tag :email %>
+        <%= text_field_tag :email %>
+      </div>
+      <div class="container-fluid center-block">
+        <%= label_tag :password %>
+        <%= password_field_tag :password %>
+      </div>
+      <div class="container-fluid center-block text-center">
+        <%= submit_tag "Login" %>
+        <p>If you don't have an account, <%= link_to "Create One", new_user_path %></p>
+      </div>
+  <% end %>
+    </div>
+  <div class="col-md-4"></div>
+</div>
