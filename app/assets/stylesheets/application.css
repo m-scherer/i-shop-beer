@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+ body.sessions {
+   background-image: url('copper-kettle.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ body.users {
+   background-image: url('copper-kettle.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+#login-header{
+  margin-top: 150px;
+  color: #FFFFFF;
+  letter-spacing: 1.1px;
+}
+#account-create-header{
+  margin-top: 150px;
+  color: #FFFFFF;
+  letter-spacing: 1.1px;
+}
+.form-horizontal {
+  width: 400px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#email-group {
+  padding-right: 80px;
+}
+.text-center {
+   text-align:center
+}

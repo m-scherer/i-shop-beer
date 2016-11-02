@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   before_action :set_cart
 
-  helper_method :get_total
+  helper_method :get_total, :logged_in?, :current_user
 
   def set_cart
     @cart = Cart.new(session[:cart])
@@ -14,5 +14,14 @@ class ApplicationController < ActionController::Base
   def get_total
     @cart.total
   end
+
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+
+  def logged_in?
+    current_user
+  end
+
 
 end
