@@ -13,12 +13,13 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#show'
 
   get '/items' => 'beers#index'
+
+
+  get '/login', to: 'sessions#new', as: 'login'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy', as: 'logout'
+
+  root to: 'sessions#new'
+
   get '/:slug' => 'styles#show'
-
-
-  get '/', to: 'sessions#new', as: 'login'
-  post '/', to: 'sessions#create'
-  delete '/', to: 'sessions#destroy', as: 'logout'
-
-
 end

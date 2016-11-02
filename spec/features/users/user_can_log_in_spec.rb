@@ -5,9 +5,9 @@ describe "user visits root" do
     user = User.create(email: "brad@yahoo.com", password: "pass")
 
     visit '/'
-    within("form") do
       fill_in "email", with: user.email
       fill_in "password", with: user.password
+    within(".form-horizontal") do
       click_on "Login"
     end
 

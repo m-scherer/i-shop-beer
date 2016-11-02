@@ -4,25 +4,25 @@
 <div class="form-horizontal center-block">
   <%= form_for @user do |f| %>
   <div class="form-group" id="email-group" >
-    <label for="email" class="col-sm-3 control-label"><%= label_tag :email %></label>
+    <label for="email" class="col-sm-3 control-label"><%= f.label :email %></label>
     <div class="col-sm-9">
-      <%= email_field_tag :email, nil, class: "form-control", placeholder: "Email" %>
+      <%= f.email_field :email, class: "form-control", placeholder: "Email" %>
     </div>
   </div>
     <div class="form-group" id="email-group">
-      <label for="password" class="col-sm-3 control-label"><%= label_tag :password %></label>
+      <label for="password" class="col-sm-3 control-label"><%= f.label :password %></label>
       <div class="col-sm-9">
-        <%= password_field_tag :password, nil, class: "form-control", placeholder:"Password" %>
+        <%= f.password_field :password, class: "form-control", placeholder:"Password" %>
       </div>
     </div>
     <div class="form-group" id="email-group">
-      <label for="password_confirmation" class="col-sm-3 control-label"><%= label_tag :confirm %></label>
+      <label for="password_confirmation" class="col-sm-3 control-label"><%= f.label :confirm %></label>
       <div class="col-sm-9">
-        <%= password_field_tag :password_confirmation, nil, class: "form-control", placeholder:"Retype password" %>
+        <%= f.password_field :password_confirmation, class: "form-control", placeholder:"Retype password" %>
       </div>
     </div>
     <div class="form-group text-center">
-      <%= submit_tag "Create Account", class:'btn btn-secondary' %>
+      <%= f.submit "Create Account", class:'btn btn-secondary' %>
     </div>
     <% end %>
 </div>
