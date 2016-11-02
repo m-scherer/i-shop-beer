@@ -37,10 +37,52 @@ RSpec.feature "User views cart" do
       visit style_beers_path(style, beer)
       expect(page).to have_content("(0)")
       click_link('cart')
-      save_and_open_page
 
       expect(page).to_not have_content(beer.name)
-      expect(page).to have_content("Your cart is empty.")
     end
   end
+
+  context "user can delete items from cart" do
+    scenario "user deletes an item from their cart" do
+
+      style = Style.create(
+          name: "IPA"
+      )
+      beer = Beer.create!(
+          name: "Lunch Break",
+          price: 5.99,
+          style: style
+      )
+
+      visit style_beers_path(style, beer)
+
+      expect(page).to have_content("(0)")
+      click_button('Add to Cart')
+      click_link('cart')
+      click_button("Remove")
+
+      expect(page).to_not have_content("Lunch Break")
+    end
+  end
+
+  context "a user can add or subtract beers from the cart" do
+    scenario "user increase quanity of beer in cart" do
+
+      style = Style.create(
+          name: "IPA"
+      )
+      beer = Beer.create!(
+          name: "Lunch Break",
+          price: 5.99,
+          style: style
+      )
+
+      visit style_beers_path(style, beer)
+
+      expect(page).to have_content("(0)")
+      click_button('Add to Cart')
+      click_link('cart')
+      click_button("+")
+
+    end
 end

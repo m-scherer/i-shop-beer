@@ -20,5 +20,13 @@ class CartController < ApplicationController
     redirect_to cart_path
   end
 
+  def destroy
+  end
+
+  def update
+    @cart.contents[params[:beer]] = params[:quantity].to_i
+    redirect_to cart_path
+  end
+
 
 end

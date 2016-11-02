@@ -7,9 +7,10 @@ Rails.application.routes.draw do
     resources :beers, only: [:index]
   end
 
-  resources :cart, only: [:create]
-  
+  resources :cart, only: [:create, ]
+
   delete '/cart/remove', path: 'destroy/:id'
+  post '/cart/update', path: 'update'
   get '/cart' => 'cart#show'
 
   get '/items' => 'beers#index'
