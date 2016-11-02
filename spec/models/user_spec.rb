@@ -12,6 +12,12 @@ RSpec.describe User, type: :model do
 
       expect(invalid_user).to be_invalid
     end
+    it "is invalid with duplicate emails" do
+      User.create(email: "bob@test.com", password: "pass")
+      invalid_user = User.new(email: "bob@test.com", password: "pass")
+
+      expect(invalid_user).to be_invalid
+    end
   end
 
   context "valid attributes" do
