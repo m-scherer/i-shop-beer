@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
       render :new
     elsif @user.authenticate(params[:password])
       session[:user_id] = @user.id
-      flash[:success] = "Successfully logged in!"
+      flash[:success] = "Logged in as #{@user.email}"
       redirect_to beers_path
     else
       render :new

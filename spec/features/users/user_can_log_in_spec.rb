@@ -12,7 +12,7 @@ describe "user visits root" do
     end
 
     expect(current_path).to eq(beers_path)
-    expect(page).to have_content("Successfully logged in!")
+    expect(page).to have_content("Logged in as #{user.email}")
     expect(page).to have_content("brad@yahoo.com")
     expect(page).to have_content("Logout")
   end

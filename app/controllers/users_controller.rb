@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     if @user.save
       flash[:success] = "Account for #{@user.email} created!"
+      session[:user_id] = @user.id
       redirect_to dashboard_path
     else
       render :new
