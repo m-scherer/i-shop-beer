@@ -11,8 +11,8 @@
     <%= button_to "Remove", cart_remove_path(beer.id), method: :delete  %>
   <% end %>
 
-
-
-
-
 Total: $<%= cart_total %>
+
+<% if logged_in?.nil? %>
+  <p> To checkout, <%= link_to "Log In", login_path %> or <%= link_to "Create Account", new_user_path %> </p>
+<% end %>
