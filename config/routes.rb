@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   end
 
   resources :cart, only: [:create]
+  
+  delete '/cart/remove', path: 'destroy/:id'
   get '/cart' => 'cart#show'
 
   get '/items' => 'beers#index'

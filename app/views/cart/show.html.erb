@@ -3,6 +3,7 @@
   <% cart_beers.each do |beer| %>
      <li><%= beer.name %> Quantity: <%= @cart.contents[beer.id.to_s] %></li>
      <li>Price: $<%= beer.price %></li>
+     <%= button_to "Remove", cart_remove_path(beer.id), method: :delete  %>
   <% end %>
 
 

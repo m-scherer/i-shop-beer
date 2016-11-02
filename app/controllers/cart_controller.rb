@@ -14,5 +14,11 @@ class CartController < ApplicationController
   def index
   end
 
+  def remove
+    cart = session[:cart]
+    cart.delete(params[:id])
+    redirect_to cart_path
+  end
+
 
 end
