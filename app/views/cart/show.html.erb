@@ -27,7 +27,6 @@
     </tr>
     </table>
   </div>
-  <td>Total: $<%= cart_total %></td>
     <td><% if logged_in? %>
       <%= button_to "Place Order", user_orders_path(current_user) %>
     <% end %>
