@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   before_action :set_cart
 
-  helper_method :get_total, :logged_in?, :current_user
+  helper_method :get_total, :logged_in?, :current_user, :cart_beers
 
   def set_cart
     @styles = Style.all
@@ -24,5 +24,10 @@ class ApplicationController < ActionController::Base
     current_user
   end
 
+  def cart_beers
+    @cart.contents.map do |beer_id, quantity|
+      Beer.find(beer_id)
+    end
+  end
 
 end

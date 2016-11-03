@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
 
   resources :styles, only: [:index]
-  resources :beers, only: [:index]
+  resources :beers, only: [:index, :show]
 
   resources :styles, only: [:index], param: :slug do
     resources :beers, only: [:index]
   end
 
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create] do
+    resources :orders, only: [:create, :show]
+  end
 
   get '/dashboard', to: 'dashboard#show'
 

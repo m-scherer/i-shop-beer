@@ -39,6 +39,7 @@ describe "Guest user" do
         click_on "Create Account"
       end
 
+
       visit cart_path
       expect(page).to have_content("Pallet Jack")
     end
