@@ -1,0 +1,7 @@
+<h1>Past Orders</h1>
+
+<% @orders.each do |order| %>
+  <p>
+    Order #: <%= link_to order.id, user_order_path(@user, order) %>
+  </p>
+<% end %>

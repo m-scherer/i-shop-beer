@@ -22,4 +22,9 @@ class OrdersController < ApplicationController
     @user = User.find(params[:user_id])
   end
 
+  def index
+    @user = User.find(session[:user_id])
+    @orders = @user.orders
+  end
+
 end

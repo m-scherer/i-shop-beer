@@ -8,9 +8,14 @@ describe  "As a logged in user" do
       user = User.create(email: "brad@yahoo.com", password: "pass")
       cart = [beer]
 
-      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
       allow_any_instance_of(ApplicationController).to receive(:cart_beers).and_return(cart)
 
+      visit '/login'
+      fill_in "email", with: user.email
+      fill_in "password", with: user.password
+      within(".form-horizontal") do
+        click_on "Login"
+      end
       visit cart_path
       click_on "Place Order"
 
@@ -20,7 +25,7 @@ describe  "As a logged in user" do
 
       click_on user.orders.first.id
 
-      expect(current_path).to eq(user_order_path(user, Order.all.last))
+      expect(current_path).to eq(user_order_path(user, Order.all.first))
       expect(page).to have_content(beer.name)
       expect(page).to have_content(beer.price)
     end
