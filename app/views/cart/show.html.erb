@@ -13,7 +13,7 @@
     <td><%= beer.name %></td>
     <td><%= @cart.contents[beer.id.to_s] %></td>
    <td>$<%= beer.price %></td>
-   <td>$<%= beer_subtotal %></td>
+   <td><%= cart_row_subtotal(beer) %></td>
    <td><%= form_tag cart_update_path(:beer => beer.id) do %>
     <%= select_tag :quantity, options_for_select((0..99)) %>
    <%= submit_tag "Update" %></td>

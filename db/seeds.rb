@@ -12,6 +12,5 @@ STYLES.each do |style|
 end
 
 BEERS.each do |beer|
-
     Beer.create!(name: beer, price: PRICES.sample, style: Style.find_by(name: STYLES.sample), image: IMAGE.sample, description: DESCRIPTION.sample)
 end

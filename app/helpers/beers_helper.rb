@@ -1,16 +1,5 @@
 module BeersHelper
-
-
-  def beer_subtotal
-    beer_subtotal = @cart.contents.map do |beer_id, quantity|
-      beer = Beer.find(beer_id)
-      beer.price * quantity
-    end
-      if beer_subtotal.reduce(:+).nil?
-        beer_subtotal = 0.00
-      else
-        beer_subtotal.reduce(:+).round(2)
-      end
+  def cart_row_subtotal(beer)
+    number_to_currency(@cart.contents[beer.id.to_s] * beer.price)
   end
-
 end
