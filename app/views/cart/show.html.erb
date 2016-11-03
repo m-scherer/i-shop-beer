@@ -1,19 +1,27 @@
 <h1>Cart Show Page</h1>
-
+<div class="panel panel-default">
+  <div class="panel-heading">Your Cart</div>
+  <table class="table">
+  <tr>
+    <th>Beer</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    <th>Subtotal</th>
+  </tr>
   <% cart_beers.each do |beer| %>
-    <li><%= beer.name %> Quantity: <%= @cart.contents[beer.id.to_s] %></li>
-     <li>Price: $<%= beer.price %></li>
-     <li>Subtotal: <%= beer.price * @cart.contents[beer.id] %></li>
-    <%= form_tag cart_update_path(:beer => beer.id) do %>
-      <%= select_tag :quantity, options_for_select((0..99)) %>
-    <%= submit_tag "Update" %>
-    <% end %>
-
-    <%= button_to "Remove", cart_remove_path(beer.id), method: :delete  %>
+  <tr>
+    <td><%= beer.name %></td>
+    <td><%= @cart.contents[beer.id.to_s] %></td>
+   <td>$<%= beer.price %></td>
+   <td>$<%= beer_subtotal %></td>
+   <td><%= form_tag cart_update_path(:beer => beer.id) do %>
+    <%= select_tag :quantity, options_for_select((0..99)) %>
+   <%= submit_tag "Update" %></td>
+      <% end %>
+    <td><%= button_to "Remove", cart_remove_path(beer.id), method: :delete  %></td>
   <% end %>
-
-
-
-
-
-Total: $<%= cart_total %>
+    </tr>
+    </table>
+  </div>
+  <td>Total: $<%= cart_total %></td>
+</div>
