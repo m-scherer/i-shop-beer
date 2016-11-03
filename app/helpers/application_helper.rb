@@ -18,5 +18,7 @@ module ApplicationHelper
     end
   end
 
-
+  def beer_subtotal
+  end
+  
 end
