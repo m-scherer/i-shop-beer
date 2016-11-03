@@ -23,6 +23,21 @@
    background-repeat: no-repeat;
    background-size: cover;
  }
+ body.beers {
+   background-image: url(<%= asset_path 'copper-kettle.jpg' %>);
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ body.styles {
+   background-image: url(<%= asset_path 'copper-kettle.jpg' %>);
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ body.cart {
+   background-image: url(<%= asset_path 'copper-kettle.jpg' %>);
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
 #login-header{
   margin-top: 150px;
   color: #FFFFFF;
@@ -44,13 +59,14 @@
 .text-center {
    text-align:center
 }
-
 #panel_width {
   width: 280px;
   height: auto;
 }
 
-#description {
-  height: 20%;
-  width: 20%;
+.cart-total {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  float: right;
 }

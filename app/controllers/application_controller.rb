@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   helper_method :get_total, :logged_in?, :current_user, :cart_beers
 
   def set_cart
+    @styles = Style.all
     @cart = Cart.new(session[:cart])
   end
 
