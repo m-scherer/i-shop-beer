@@ -1,17 +1,21 @@
-<h1>Cart Show Page</h1>
+
 <div class="panel panel-default">
   <div class="panel-heading">Your Cart</div>
   <table class="table">
   <tr>
+    <th></th>
     <th>Beer</th>
     <th>Quantity</th>
+    <th></th>
     <th>Price</th>
     <th>Subtotal</th>
   </tr>
   <% cart_beers.each do |beer| %>
   <tr>
+    <td><%= image_tag(beer.image, :height => '25', :width => '40') %></td>
     <td><%= beer.name %></td>
     <td><%= @cart.contents[beer.id.to_s] %></td>
+    <td><span class="glyphicon glyphicon-align-left" aria-label="Left Align" data-toggle="tooltip" data-placement="top" title="<%= beer.description %>"></span></td>
    <td>$<%= beer.price %></td>
    <td>$<%= beer_subtotal %></td>
    <td><%= form_tag cart_update_path(:beer => beer.id) do %>
@@ -24,11 +28,10 @@
     </table>
   </div>
   <td>Total: $<%= cart_total %></td>
+    <td><% if logged_in? %>
+      <%= button_to "Place Order", user_orders_path(current_user) %>
+    <% end %>
+    <% if logged_in?.nil? %>
+      <p> To checkout, <%= link_to "Log In", login_path %> or <%= link_to "Create Account", new_user_path %> </p>
+    <% end %></td>
 </div>
-
-<% if logged_in? %>
-  <%= button_to "Place Order", user_orders_path(current_user) %>
-<% end %>
-<% if logged_in?.nil? %>
-  <p> To checkout, <%= link_to "Log In", login_path %> or <%= link_to "Create Account", new_user_path %> </p>
-<% end %>
