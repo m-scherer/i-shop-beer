@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-describe  'As a logged in user' do
-  context 'when I add items to my cart' do
-    it "I can place an order" do
+describe  "As a logged in user" do
+  context "when I place an order" do
+    it "I can view past orders" do
       style = Style.create(name: "IPA")
       beer = Beer.create(name: "Pallet Jack", style: style, price: 5.00)
       user = User.create(email: "brad@yahoo.com", password: "pass")
@@ -13,6 +13,12 @@ describe  'As a logged in user' do
 
       visit cart_path
       click_on "Place Order"
+
+      visit orders_path
+
+      expect(page).to have_content(user.orders.first.id)
+
+      click_on user.orders.first.id
 
       expect(current_path).to eq(user_order_path(user, Order.all.last))
       expect(page).to have_content(beer.name)

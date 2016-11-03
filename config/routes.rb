@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     resources :orders, only: [:create, :show]
   end
 
+  get '/orders', to: 'orders#index'
+
   get '/dashboard', to: 'dashboard#show'
 
   resources :cart, only: [:create]
