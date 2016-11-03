@@ -31,5 +31,17 @@ RSpec.describe Beer, type: :model do
       expect(beer).to respond_to(:style)
       expect(beer).to_not respond_to(:styles)
     end
+    it "has many beer_orders" do
+      beer = Beer.new(name: "Pliny the Elder", price: 7.00)
+
+      expect(beer).to respond_to(:beer_orders)
+      expect(beer).to_not respond_to(:beer_order)
+    end
+    it "has many orders" do
+      beer = Beer.new(name: "Pliny the Elder", price: 7.00)
+
+      expect(beer).to respond_to(:orders)
+      expect(beer).to_not respond_to(:order)
+    end
   end
 end

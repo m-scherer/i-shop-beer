@@ -25,3 +25,10 @@
   </div>
   <td>Total: $<%= cart_total %></td>
 </div>
+
+<% if logged_in? %>
+  <%= button_to "Place Order", user_orders_path(current_user) %>
+<% end %>
+<% if logged_in?.nil? %>
+  <p> To checkout, <%= link_to "Log In", login_path %> or <%= link_to "Create Account", new_user_path %> </p>
+<% end %>
