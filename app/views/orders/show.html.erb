@@ -1,6 +1,8 @@
 <h1>Your Order</h1>
 <% @user.orders.each do |order| %>
   <% order.beers.each do |beer| %>
+  Quantity: <%= beer.get_beer_order(order) %>
+    <%= beer.beer_orders %>
     <%= beer.name %>
     <%= beer.price %>
   <% end %>
