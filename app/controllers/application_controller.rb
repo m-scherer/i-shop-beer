@@ -29,4 +29,8 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def clear_cart
+    session[:cart] = {}
+  end
+
 end

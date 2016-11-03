@@ -5,6 +5,7 @@ class OrdersController < ApplicationController
     @order = @user.orders.new
     if @order.save
       @order.create_beer_orders(cart_beers, @cart)
+      clear_cart
       flash[:success] = "Placed your order!"
       redirect_to user_order_path(@user, @order)
     else
@@ -14,6 +15,7 @@ class OrdersController < ApplicationController
 
   def show
     @user = User.find(params[:user_id])
+    @order = Order.find(params[:id])
   end
 
   def index
