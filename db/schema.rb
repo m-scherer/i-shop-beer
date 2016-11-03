@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161101232331) do
+ActiveRecord::Schema.define(version: 20161103155440) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "beer_orders", force: :cascade do |t|
+    t.integer  "order_id"
+    t.integer  "beer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "beer_orders", ["beer_id"], name: "index_beer_orders_on_beer_id", using: :btree
+  add_index "beer_orders", ["order_id"], name: "index_beer_orders_on_order_id", using: :btree
 
   create_table "beers", force: :cascade do |t|
     t.float    "price"
@@ -25,6 +35,14 @@ ActiveRecord::Schema.define(version: 20161101232331) do
   end
 
   add_index "beers", ["style_id"], name: "index_beers_on_style_id", using: :btree
+
+  create_table "orders", force: :cascade do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "orders", ["user_id"], name: "index_orders_on_user_id", using: :btree
 
   create_table "styles", force: :cascade do |t|
     t.string   "name"
@@ -40,5 +58,8 @@ ActiveRecord::Schema.define(version: 20161101232331) do
     t.datetime "updated_at",      null: false
   end
 
+  add_foreign_key "beer_orders", "beers"
+  add_foreign_key "beer_orders", "orders"
   add_foreign_key "beers", "styles"
+  add_foreign_key "orders", "users"
 end

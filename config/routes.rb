@@ -7,7 +7,9 @@ Rails.application.routes.draw do
     resources :beers, only: [:index]
   end
 
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create] do
+    resources :orders, only: [:create, :show]
+  end
 
   get '/dashboard', to: 'dashboard#show'
 
