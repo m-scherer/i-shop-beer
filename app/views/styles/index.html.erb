@@ -1,4 +1,8 @@
-<h1>Test Styles Index</h1>
+<ol class="breadcrumb">
+  <li><a><%= link_to "Home", root_path %></a></li>
+  <li class="active">Styles</li>
+</ol>
+<h1>All Styles</h1>
 <div id="style-index">
   <% @styles.each do |style| %>
   <li><%= link_to style.name, "/#{style.slug}" %></li>
