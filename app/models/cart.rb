@@ -18,4 +18,8 @@ class Cart
     contents[beer_id.to_s]
   end
 
+  def get_quantity_of_beer(beer)
+    contents[beer.id.to_s]
+  end
+
 end

@@ -34,4 +34,16 @@ describe Cart do
     end
   end
 
+  describe "#get_quantity_of_beer" do
+    it "can get the quantity beer" do
+      cart = Cart.new({"1" => 5, "2" => 1})
+      user = User.create(email: "brad@yahoo.com", password: "pass")
+      style = Style.create(name: "IPA")
+      beer = Beer.create(name: "Pallet Jack", style: style, price: 5.00)
+      order = Order.new(user: user)
+
+      expect(order.create_beer_orders([beer], cart)).to eq([beer])
+    end
+  end
+
 end
