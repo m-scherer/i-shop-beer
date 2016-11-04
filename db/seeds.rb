@@ -1,3 +1,5 @@
+BeerOrder.destroy_all
+Order.destroy_all
 Beer.destroy_all
 Style.destroy_all
 
