@@ -5,6 +5,15 @@ class Beer < ActiveRecord::Base
 
   validates :name, presence: true, uniqueness: true
   validates :price, presence: true
+  validates :style, presence: true
+
+  def self.search(argument)
+    if argument
+      where("name LIKE ?", "%#{argument}%")
+    else
+      Beer.all
+    end
+  end
 
   enum status: { instock: 0 , out_of_stock: 1 }
 

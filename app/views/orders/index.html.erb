@@ -1,7 +1,12 @@
 <h1>Past Orders</h1>
 
-<% @orders.each do |order| %>
-  <p>
-    Order #: <%= link_to order.id, user_order_path(@user, order) %>
-  </p>
+<% if @orders.length == 0 %>
+  <h3>No previous orders</h3>
+<% else %>
+  <% @orders.each do |order| %>
+  <ul>
+    <li>Order #: <%= link_to order.id, user_order_path(@user, order) %> </li>
+    <li>Ordered on: <%= order.created_at %></li>
+  </ul>
+    <% end %>
 <% end %>

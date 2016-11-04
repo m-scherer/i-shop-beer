@@ -14,7 +14,7 @@ RSpec.feature "User views cart" do
 
     visit style_beers_path(style, beer)
 
-    expect(page).to have_content("(0)")
+    expect(page).to have_content("0")
     click_button('Add to Cart')
     click_link('cart')
 
@@ -35,7 +35,7 @@ RSpec.feature "User views cart" do
       )
 
       visit style_beers_path(style, beer)
-      expect(page).to have_content("(0)")
+      expect(page).to have_content("0")
       click_link('cart')
 
       expect(page).to_not have_content(beer.name)
@@ -56,7 +56,7 @@ RSpec.feature "User views cart" do
 
       visit style_beers_path(style, beer)
 
-      expect(page).to have_content("(0)")
+      expect(page).to have_content("0")
       click_button('Add to Cart')
       click_link('cart')
       click_button("Remove")
@@ -79,13 +79,13 @@ RSpec.feature "User views cart" do
 
       visit style_beers_path(style, beer)
 
-      expect(page).to have_content("(0)")
+      expect(page).to have_content("0")
       click_button('Add to Cart')
       click_link('cart')
       find(:xpath, '//option[contains(text(), 19)]').select_option
       click_button('Update')
 
-      expect(page).to have_content("(19)")
+      expect(page).to have_content("19")
     end
   end
 end
