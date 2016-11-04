@@ -7,6 +7,14 @@ class Beer < ActiveRecord::Base
   validates :price, presence: true
   validates :style, presence: true
 
+  def self.search(argument)
+    if argument
+      where("name LIKE ?", "%#{argument}%")
+    else
+      Beer.all
+    end
+  end
+
   def get_beer_order(order)
     beer_orders.find_by(order: order).quantity
   end
