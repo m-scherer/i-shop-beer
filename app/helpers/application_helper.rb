@@ -5,7 +5,10 @@ module ApplicationHelper
         beer = Beer.find(beer_id)
         beer.price * quantity
     end
-    cart_total.reduce(:+)
+      if cart_total.reduce(:+).nil?
+        cart_total = 0.00
+      else
+        cart_total.reduce(:+).round(2)
+      end
   end
-
 end

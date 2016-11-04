@@ -6,9 +6,6 @@ describe  "As a logged in user" do
       style = Style.create(name: "IPA")
       beer = Beer.create(name: "Pallet Jack", style: style, price: 5.00)
       user = User.create(email: "brad@yahoo.com", password: "pass")
-      cart = [beer]
-
-      allow_any_instance_of(ApplicationController).to receive(:cart_beers).and_return(cart)
 
       visit '/login'
       fill_in "email", with: user.email
@@ -16,6 +13,9 @@ describe  "As a logged in user" do
       within(".form-horizontal") do
         click_on "Login"
       end
+
+      visit beers_path
+      click_button "Add to Cart"
       visit cart_path
       click_on "Place Order"
 

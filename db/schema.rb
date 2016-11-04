@@ -31,8 +31,10 @@ ActiveRecord::Schema.define(version: 20161103201751) do
     t.float    "price"
     t.string   "name"
     t.integer  "style_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "description"
+    t.string   "image"
   end
 
   add_index "beers", ["style_id"], name: "index_beers_on_style_id", using: :btree
