@@ -22,7 +22,8 @@ describe "user experience on styles index page" do
     beer_4 = Beer.create(name: "Coors", style: style_1, price: 3.00 )
 
     visit styles_path
-    click_on("IPA")
+    within('style-beers-show')
+      click_on("IPA")
 
     expect(page).to have_content(beer.name)
     expect(page).to have_content(beer_2.name)

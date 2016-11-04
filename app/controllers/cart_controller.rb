@@ -5,7 +5,8 @@ class CartController < ApplicationController
     @cart.add_beer(beer.id)
     session[:cart] = @cart.contents
     flash[:success] = "#{beer.name} added to cart!"
-    redirect_to style_beers_path(beer.style)
+    # redirect_to style_beers_path(beer.style)
+    redirect_to current_path
   end
 
   def show
