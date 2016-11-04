@@ -13,14 +13,14 @@ RSpec.feature "User adds beers" do
 
     visit style_beers_path(style, beer)
 
-    expect(page).to have_content("(0)")
+    expect(page).to have_content("0")
     click_button "Add to Cart"
 
     expect(page).to have_content("#{beer.name} added to cart!")
-    expect(page).to have_content("(1)")
+    expect(page).to have_content("1")
     click_button "Add to Cart"
 
     expect(page).to have_content("#{beer.name} added to cart!")
-    expect(page).to have_content("(2)")
+    expect(page).to have_content("2")
   end
 end
