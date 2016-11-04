@@ -5,6 +5,7 @@ class Beer < ActiveRecord::Base
 
   validates :name, presence: true, uniqueness: true
   validates :price, presence: true
+  validates :style, presence: true
 
   def get_beer_order(order)
     beer_orders.find_by(order: order).quantity

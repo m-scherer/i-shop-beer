@@ -11,4 +11,11 @@ module ApplicationHelper
         cart_total.reduce(:+).round(2)
       end
   end
+
+  def disable_place_order_button
+    if @cart.contents.count == 0
+      true
+    end
+  end
+
 end

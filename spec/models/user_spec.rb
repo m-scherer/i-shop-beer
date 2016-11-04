@@ -29,7 +29,12 @@ RSpec.describe User, type: :model do
   end
 
   context "relationships" do
-    pending
+    it "has many orders" do
+      user = User.new(email: "bob@test.com", password: "pass")
+
+      expect(user).to respond_to(:orders)
+      expect(user).to_not respond_to(:order)
     end
+  end
 
 end
