@@ -19,7 +19,7 @@ describe Beer do
 
       visit beers_path
       click_on(beer.name)
-      expect(page).to have_content(beer.description)
+
       expect(page).to have_css("img[src*='http://www.bravosolutions.com/img13/beer.gif']")
     end
   end

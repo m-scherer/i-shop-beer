@@ -7,7 +7,7 @@ class StylesController < ApplicationController
   def show
     @style = Style.find_by(slug: params[:slug])
     if @style.nil?
-      redirect_to 'public/404.html'
+      render file: 'public/404'
     else
       @beers = Beer.where(style: @style)
     end
