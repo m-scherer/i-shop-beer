@@ -25,6 +25,15 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <div class="navbar-form navbar-left">
+          <%= form_tag(beers_path, method: :get) do %>
+          <div class="form-group">
+            <%= label_tag :q %>
+            <%= text_field_tag :q, nil, class: "form-control", placeholder: "Search Beers" %>
+            <%= submit_tag "Search", class: "btn btn-default" %>
+          </div>
+        </div>
+        <% end %>
         <li><a href="/cart/" id='cart'><span class="badge"><i class="glyphicon glyphicon-shopping-cart"></i> <%= get_total %></span></a></li>
       <% if logged_in? %>
         <li class="dropdown" id='login'>
