@@ -3,8 +3,9 @@
   <li class="active">Dashboard</li>
 </ol>
 
-<%= form_tag(beers_path, method: :get) do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag (:q)%>
-  <%= submit_tag("Search") %>
-<% end %>
+
+  <%= form_tag(beers_path, method: :get) do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag (:q)%>
+    <%= submit_tag("Search") %>
+  <% end %>

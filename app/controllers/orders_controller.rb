@@ -15,7 +15,11 @@ class OrdersController < ApplicationController
 
   def show
     @user = User.find(params[:user_id])
-    @order = Order.find(params[:id])
+    if current_user && current_user != @user
+      render file: "/public/404"
+    else
+      @order = Order.find(params[:id])
+    end
   end
 
   def index
