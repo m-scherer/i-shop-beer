@@ -12,7 +12,7 @@ class Order < ActiveRecord::Base
   end
 
   def total_order(order)
-    beers.reduce(0) do |result, beer|
+    beers.inject(0) do |result, beer|
       result += beer.get_subtotal(order)
     end
   end
