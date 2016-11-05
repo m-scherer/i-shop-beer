@@ -5,9 +5,9 @@
   <% @order.beers.each do |beer| %>
   <%= link_to beer.name, beer_path(beer) %>
   <ul>
-    <li><%= beer.price %></li>
+    <li>Price: <%= number_to_currency(beer.price) %></li>
     <li>Quantity: <%= beer.get_beer_order(@order) %></li>
-    <li>Subtotal: <%= beer.get_subtotal(@order) %></li>
+    <li>Subtotal: <%= number_to_currency(beer.get_subtotal(@order)) %></li>
   </ul>
     <% end %>
 </div>
@@ -15,4 +15,4 @@
 <p> Order Status: <%= @order.order_status %> </p>
 <p> Order Date: <%= @order.created_at %> </p>
 <p> Last Updated: <%= @order.updated_at %> </p>
-<p> Order Total: <%= @total %> </p>
+<p> Order Total: <%= number_to_currency(@total) %> </p>
