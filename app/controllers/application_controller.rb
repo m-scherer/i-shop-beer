@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   before_action :set_cart
 
-  helper_method :get_total, :logged_in?, :current_user, :cart_beers
+  helper_method :get_total, :logged_in?, :current_user, :cart_beers, :current_admin?
 
   def set_cart
     @styles = Style.all
@@ -32,6 +32,10 @@ class ApplicationController < ActionController::Base
 
   def clear_cart
     session[:cart] = {}
+  end
+
+  def current_admin?
+    current_user && current_user.admin?
   end
 
 end

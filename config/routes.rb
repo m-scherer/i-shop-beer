@@ -30,4 +30,8 @@ Rails.application.routes.draw do
   root to: 'sessions#new'
 
   get '/:slug' => 'styles#show'
+
+  namespace :admin do
+    resources :dashboard, only: [:show]
+  end
 end

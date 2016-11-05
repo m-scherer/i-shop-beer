@@ -15,6 +15,8 @@ class Beer < ActiveRecord::Base
     end
   end
 
+  enum status: { instock: 0 , out_of_stock: 1 }
+
   def get_beer_order(order)
     beer_orders.find_by(order: order).quantity
   end

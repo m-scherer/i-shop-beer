@@ -60,7 +60,6 @@ RSpec.feature "User views cart" do
       click_button('Add to Cart')
       click_link('cart')
       click_button("Remove")
-
       expect(page).to have_content("Successfully removed #{beer.name} from cart!")
     end
   end
