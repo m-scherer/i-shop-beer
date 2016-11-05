@@ -23,17 +23,6 @@ describe  "As a logged in user" do
       visit orders_path
 
       expect(page).to have_content(user.orders.first.id)
-
-      click_on user.orders.first.id
-
-      expect(current_path).to eq(user_order_path(user, Order.all.first))
-      expect(page).to have_content("Pallet Jack")
-      expect(page).to have_content("Price: $5.00")
-      expect(page).to have_content("Subtotal: $5.00")
-      expect(page).to have_content("Order Status: #{order.order_status}")
-      expect(page).to have_content("Order Date: #{order.created_at}")
-      expect(page).to have_content("Last Updated: #{order.updated_at}")
-      expect(page).to have_content("Order Total: $5.00")
     end
   end
   context "with no placed orders" do
@@ -52,4 +41,5 @@ describe  "As a logged in user" do
       expect(page).to have_content("No previous orders")
     end
   end
+
 end

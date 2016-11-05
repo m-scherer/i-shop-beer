@@ -20,6 +20,8 @@ RSpec.describe Order, type: :model do
       expect(order).to respond_to(:beers)
       expect(order).to_not respond_to(:beer)
     end
+  end
+
 
     context '#create_beer_orders' do
       it "can create beer orders" do
@@ -45,8 +47,36 @@ RSpec.describe Order, type: :model do
         expect(order.total_order(order)).to eq(15.00)
       end
     end
-  end
 
+    context 'order status' do
+      it "marks an order as ordered by default" do
+        user = User.create(email: "brad@yahoo.com", password: "pass")
+        order = Order.create(user: user)
 
+        expect(order.order_status).to eq("ordered")
+      end
+      it "can cancel an order" do
+        user = User.create(email: "brad@yahoo.com", password: "pass")
+        order = Order.create(user: user)
+
+        order.cancelled!
+        expect(order.order_status).to eq("cancelled")
+      end
+      it "can complete an order" do
+        user = User.create(email: "brad@yahoo.com", password: "pass")
+        order = Order.create(user: user)
+
+        order.completed!
+        expect(order.order_status).to eq("completed")
+
+      end
+      it "can mark an order as paid" do
+        user = User.create(email: "brad@yahoo.com", password: "pass")
+        order = Order.create(user: user)
+
+        order.paid!
+        expect(order.order_status).to eq("paid")
+      end
+    end
 
 end
