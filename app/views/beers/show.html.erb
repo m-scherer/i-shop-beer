@@ -1,4 +1,8 @@
-
+<ol class="breadcrumb">
+  <li><a><%= link_to "Home", root_path %></a></li>
+  <li><%= link_to @beer.style.name, "/#{@beer.style.slug}" %></li>
+  <li class="active"><%= @beer.name %></li>
+</ol>
 <div class="row">
   <div class="col-sm-4">
     <div class="panel panel-default" id="panel_width">

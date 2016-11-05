@@ -20,4 +20,16 @@ describe  'As a logged in user' do
       expect(page).to have_content(beer.price)
     end
   end
+
+  context 'when the cart is empty' do
+    it "I can't place an order" do
+      user = User.create(email: "brad@yahoo.com", password: "pass")
+
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
+
+      visit cart_path
+
+      expect(page).to have_button("Place Order", disabled: true)
+    end
+  end
 end

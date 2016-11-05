@@ -1,3 +1,5 @@
+BeerOrder.destroy_all
+Order.destroy_all
 Beer.destroy_all
 Style.destroy_all
 
@@ -12,5 +14,5 @@ STYLES.each do |style|
 end
 
 BEERS.each do |beer|
-    Beer.create!(name: beer, price: PRICES.sample, style: Style.find_by(name: STYLES.sample), image: IMAGE.sample, description: DESCRIPTION.sample)
+    Beer.create!(name: beer, price: PRICES.sample, style: Style.find_by(name: STYLES.sample), image: IMAGE.sample, description: DESCRIPTION.sample, status: 0)
 end
