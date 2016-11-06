@@ -16,6 +16,7 @@ class OrdersController < ApplicationController
   def show
     @user = User.find(params[:user_id])
     @order = Order.find(params[:id])
+    @total = @order.total_order
   end
 
   def index

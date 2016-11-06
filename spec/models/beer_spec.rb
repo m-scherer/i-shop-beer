@@ -51,15 +51,44 @@ RSpec.describe Beer, type: :model do
     end
   end
 
+  context "#search" do
+    it "can find a beer with the full name" do
+      style = Style.create(name: "IPA")
+      beer = Beer.create(name: "Pliny the Elder", price: 7.00, style: style)
+
+      expect(Beer.search("Pliny the Elder")).to eq([beer])
+    end
+    it "can find beers with a portion of the name" do
+      style = Style.create(name: "IPA")
+      beer1 = Beer.create(name: "Pliny the Elder", price: 7.00, style: style)
+      beer2 = Beer.create(name: "Blind Pig I.P.A.", price: 7.00, style: style)
+
+      expect(Beer.search("lin")).to eq([beer1, beer2])
+    end
+  end
+
   context "#get_beer_order" do
     it "can get beer orders" do
       style = Style.create(name: "IPA")
       user = User.create(email: "brad@yahoo.com", password: "pass")
       beer = Beer.create(name: "Pliny the Elder", price: 7.00, style: style)
       order = Order.create(user: user)
-      beer_order = BeerOrder.create(beer: beer, order:order, quantity: 1)
+      beer_order = BeerOrder.create(beer: beer, order: order, quantity: 1)
 
       expect(beer.get_beer_order(order)).to eq(1)
     end
   end
+
+  context "#get_beer_subtotal" do
+    it "can get the subtotal for a beer" do
+      style = Style.create(name: "IPA")
+      beer = Beer.create(name: "Pliny the Elder", price: 7.00, style: style)
+      user = User.create(email: "brad@yahoo.com", password: "pass")
+      order = Order.create(user: user)
+      beer_order = BeerOrder.create(beer: beer, order: order, quantity: 2)
+
+      expect(beer.get_subtotal(order)).to eq(14.00)
+    end
+  end
+
 end
