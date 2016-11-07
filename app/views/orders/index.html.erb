@@ -5,7 +5,7 @@
 <% else %>
   <% @orders.each do |order| %>
   <ul>
-    <li>Order #: <%= link_to order.id, user_order_path(@user, order) %> </li>
+    <li>Order #: <%= link_to order.id, user_order_path(current_user, order) %> </li>
     <li>Ordered on: <%= order.created_at %></li>
   </ul>
     <% end %>
