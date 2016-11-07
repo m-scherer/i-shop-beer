@@ -1,12 +1,35 @@
-<h1>Past Orders</h1>
-
-<% if @orders.length == 0 %>
-  <h3>No previous orders</h3>
-<% else %>
-  <% @orders.each do |order| %>
-  <ul>
-    <li>Order #: <%= link_to order.id, user_order_path(@user, order) %> </li>
-    <li>Ordered on: <%= order.created_at %></li>
-  </ul>
+<div class="container-fluid" style="margin-top: 50px;">
+  <div class="panel panel-default">
+    <div class="panel-heading text-center">
+      <h2>All Previous Orders</h2>
+    </div>
+    <% if @orders.length == 0 %>
+      <h3>No previous orders</h3>
+    <% else %>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Order #</th>
+            <th>Ordered On</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @orders.each do |order| %>
+            <tr>
+              <td>
+                <%= link_to order.id, user_order_path(current_user, order) %>
+              </td>
+              <td>
+                <%= order.format_created_by %>
+              </td>
+              <td>
+                <%= order.order_status %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
     <% end %>
-<% end %>
+  </div>
+</div>

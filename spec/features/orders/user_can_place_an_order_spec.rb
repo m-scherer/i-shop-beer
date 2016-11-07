@@ -13,14 +13,12 @@ describe  'As a logged in user' do
       visit style_beers_path(style, beer)
       click_button "Add to Cart"
       visit cart_path
-      click_on "Place Order"
+      click_on "Checkout"
 
-      expect(current_path).to eq(user_order_path(user, Order.all.first))
-      expect(page).to have_content("Pallet Jack")
-      expect(page).to have_content("Price: $5.00")
-      expect(page).to have_content("Subtotal: $5.00")
-      expect(page).to have_content("Order Date: #{order.created_at}")
-      expect(page).to have_content("Order Total: $5.00")
+      expect(current_path).to eq(orders_path)
+      expect(page).to have_content(order.id)
+      expect(page).to have_content(order.created_at)
+      expect(page).to have_content(order.created_at)
     end
   end
 
@@ -32,7 +30,7 @@ describe  'As a logged in user' do
 
       visit cart_path
 
-      expect(page).to have_button("Place Order", disabled: true)
+      expect(page).to have_button("Checkout", disabled: true)
     end
   end
 end
