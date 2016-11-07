@@ -15,10 +15,10 @@ class OrdersController < ApplicationController
 
   def show
     @user = User.find(params[:user_id])
-    if current_user && current_user != @user
+    @order = Order.find(params[:id])
+    if current_user.id != @order.user.id
       render file: "/public/404"
     else
-      @order = Order.find(params[:id])
       @total = @order.total_order
     end
   end
