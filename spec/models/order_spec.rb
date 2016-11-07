@@ -44,7 +44,7 @@ RSpec.describe Order, type: :model do
         beer_order = BeerOrder.create(beer: beer1, order: order, quantity: 1)
         beer_order = BeerOrder.create(beer: beer2, order: order, quantity: 2)
 
-        expect(order.total_order(order)).to eq(15.00)
+        expect(order.total_order).to eq(15.00)
       end
     end
 

@@ -1,4 +1,10 @@
 language: ruby
 rvm:
   - 2.3.0-p0
-script: bundle exec rspec
+
+script: rspec spec
+task :default => [:spec]
+desc 'run Rspec specs'
+task :spec do
+  sh 'rspec spec'
+end
