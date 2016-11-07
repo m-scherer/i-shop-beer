@@ -32,6 +32,6 @@ Rails.application.routes.draw do
   get '/:slug' => 'styles#show'
 
   namespace :admin do
-    resources :dashboard, only: [:show]
+    get '/dashboard', to: 'dashboard#show'
   end
 end
