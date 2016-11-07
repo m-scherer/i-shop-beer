@@ -3,7 +3,7 @@ class Order < ActiveRecord::Base
   has_many :beer_orders
   has_many :beers, through: :beer_orders
 
-  enum order_status: [:ordered, :paid, :cancelled, :completed]
+  enum order_status: [:Ordered, :Paid, :Cancelled, :Completed]
 
   def create_beer_orders(cart_beers, cart)
     cart_beers.each do |beer|
@@ -15,6 +15,10 @@ class Order < ActiveRecord::Base
     beers.inject(0) do |result, beer|
       result += beer.get_subtotal(self)
     end
+  end
+
+  def format_created_by
+    created_at.to_date
   end
 
 end

@@ -17,7 +17,6 @@ describe "as a logged in admin" do
       end
 
       visit '/admin/beers'
-      save_and_open_page
       expect(page).to have_content("PBR")
 
     end
