@@ -37,4 +37,15 @@ RSpec.describe User, type: :model do
     end
   end
 
+  context "user role" do
+    it "can change admin status" do
+      user = User.new(email: "bob@test.com", password: "pass")
+
+      expect(user.role).to eq( "default")
+
+      user.admin!
+
+      expect(user.role).to eq( "admin")
+    end
+  end
 end
