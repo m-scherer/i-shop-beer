@@ -17,7 +17,7 @@ class OrdersController < ApplicationController
     @user = User.find(params[:user_id])
     if current_user.admin? || current_user && current_user == @user
       @order = Order.find(params[:id])
-      @total = @order.total_order(@order)
+      @total = @order.total_order
     else
       render file: "/public/404"
     end

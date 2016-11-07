@@ -11,9 +11,9 @@ class Order < ActiveRecord::Base
     end
   end
 
-  def total_order(pass_order_to_beer)
+  def total_order
     beers.inject(0) do |result, beer|
-      result += beer.get_subtotal(pass_order_to_beer)
+      result += beer.get_subtotal(self)
     end
   end
 
