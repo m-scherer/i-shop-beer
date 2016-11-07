@@ -12,6 +12,10 @@ class SessionsController < ApplicationController
     elsif @user && @user.authenticate(params[:password]) == false
       flash[:danger] = "Password invalid!"
       render :new
+    elsif @user.authenticate(params[:password]) && @user.admin?
+      session[:user_id] = @user.id
+      flash[:success] = "Logged in as #{@user.email}"
+      redirect_to admin_dashboard_path
     elsif @user.authenticate(params[:password])
       session[:user_id] = @user.id
       flash[:success] = "Logged in as #{@user.email}"

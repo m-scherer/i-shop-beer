@@ -1,19 +1,24 @@
-<ol class="breadcrumb">
-  <li><a><%= link_to "Home", root_path %></a></li>
-  <li class="active">Beers</li>
-</ol>
-<h1>All Beers</h1>
-<br>
 <div class="row">
   <% @beers.each do |beer| %>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <div class="panel panel-default" id="panel_width">
         <div class="panel-heading text-center"><%= link_to beer.name, beer_path(beer) %> </div>
-        <div class="panel-body text-center">
-          <%= image_tag(beer.image, :height => '180', :width => '240') %><br>
-          <strong><%= number_to_currency(beer.price) %></strong><br>
-          <%= beer.description %><br>
-          <%= button_to "Add to Cart", cart_path(beer_id: beer.id), class: "btn btn-primary" %>
+          <div class="panel-body text-center">
+          <% if beer.status == "instock" %>
+            <%= image_tag(beer.image, :height => '180', :width => '240') %><br>
+            <strong><%= number_to_currency(beer.price) %></strong><br>
+            <span class="glyphicon glyphicon-align-left" aria-label="Left Align" data-toggle="tooltip" data-placement="top" title="<%= beer.description %>"></span>
+            <%= button_to "Add to Cart", cart_path(beer_id: beer.id), class: "btn btn-primary" %>
+          <% else %>
+          <div id="overlay">
+            <div id="main_image"><%= image_tag(beer.image, :height => '180', :width => '240') %><br></div>
+            <div id="overlay_image"><%= image_tag("sold-out-png-30.png", :height => '180', :width => '180') %><br></div>
+          </div>
+            <strong><%= number_to_currency(beer.price) %></strong><br>
+            <span class="glyphicon glyphicon-align-left" aria-label="Left Align" data-toggle="tooltip" data-placement="top" title="<%= beer.description %>"></span>
+            <%= button_to "Unavailable", cart_path(beer_id: beer.id), class: "btn btn-primary", disabled: true %>
+        <% end %>
+
         </div>
       </div>
     </div>

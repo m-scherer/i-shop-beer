@@ -22,6 +22,7 @@ describe "user experience on styles index page" do
     beer_4 = Beer.create(name: "Coors", style: style_1, price: 3.00 )
 
     visit styles_path
+
     within('#style-index') do
       click_on("IPA")
     end

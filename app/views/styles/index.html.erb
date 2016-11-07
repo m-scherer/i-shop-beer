@@ -3,8 +3,12 @@
   <li class="active">Styles</li>
 </ol>
 <h1>All Styles</h1>
-<div id="style-index">
+
+
+<div class="row" id="style-index">
   <% @styles.each do |style| %>
-  <li><%= link_to style.name, "/#{style.slug}" %></li>
+  <div class="col-sm-3">
+    <%= link_to style.name, "/#{style.slug}" %>
   <% end %>
+  </div>
 </div>
