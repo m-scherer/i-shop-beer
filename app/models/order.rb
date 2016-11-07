@@ -17,4 +17,8 @@ class Order < ActiveRecord::Base
     end
   end
 
+  def format_created_by
+    created_at.to_date
+  end
+
 end

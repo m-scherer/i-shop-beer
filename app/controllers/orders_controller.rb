@@ -24,7 +24,7 @@ class OrdersController < ApplicationController
   end
 
   def index
-    @orders = current_user.orders
+    @orders = current_user.user_orders
   end
 
 end
