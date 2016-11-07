@@ -19,6 +19,7 @@ class OrdersController < ApplicationController
       render file: "/public/404"
     else
       @order = Order.find(params[:id])
+      @total = @order.total_order
     end
   end
 

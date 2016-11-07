@@ -21,4 +21,8 @@ class Beer < ActiveRecord::Base
     beer_orders.find_by(order: order).quantity
   end
 
+  def get_subtotal(order)
+    price * get_beer_order(order)
+  end
+
 end

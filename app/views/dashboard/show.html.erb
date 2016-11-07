@@ -2,11 +2,3 @@
   <li><a><%= link_to "Home", root_path %></a></li>
   <li class="active">Dashboard</li>
 </ol>
-
-  <%= form_tag(beers_path, method: :get) do %>
-    <%= label_tag(:q, "Search for:") %>
-    <%= text_field_tag (:q)%>
-    <%= submit_tag("Search") %>
-  <% end %>
-  <br>
-  <h3><%= @user.email %></h3>
