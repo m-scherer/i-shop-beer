@@ -3,7 +3,7 @@ class Order < ActiveRecord::Base
   has_many :beer_orders
   has_many :beers, through: :beer_orders
 
-  enum order_status: [:ordered, :paid, :cancelled, :completed]
+  enum order_status: [:Ordered, :Paid, :Cancelled, :Completed]
 
   def create_beer_orders(cart_beers, cart)
     cart_beers.each do |beer|

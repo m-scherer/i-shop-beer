@@ -16,8 +16,9 @@ describe  'As a logged in user' do
       click_on "Checkout"
 
       expect(current_path).to eq(orders_path)
-      expect(page).to have_content("Order #: #{order.id}")
-      expect(page).to have_content("Ordered on: #{order.created_at}")
+      expect(page).to have_content(order.id)
+      expect(page).to have_content(order.created_at)
+      expect(page).to have_content(order.created_at)
     end
   end
 
