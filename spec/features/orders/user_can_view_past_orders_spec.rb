@@ -18,7 +18,7 @@ describe  "As a logged in user" do
       visit beers_path
       click_button "Add to Cart"
       visit cart_path
-      click_on "Place Order"
+      click_on "Checkout"
 
       visit orders_path
 
