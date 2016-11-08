@@ -33,5 +33,6 @@ Rails.application.routes.draw do
 
   namespace :admin do
     get '/dashboard', to: 'dashboard#show'
+    patch '/dashboard/update', to: 'dashboard#update', as: 'order_update'
   end
 end
