@@ -15,9 +15,22 @@ class Admin::DashboardController < Admin::BaseController
     end
   end
 
-    def update
+    def paid
       @order = Order.find(params[:order])
-      byebug
+      @order.Paid!
+      redirect_to admin_dashboard_path
+    end
+
+    def cancel
+      @order = Order.find(params[:order])
+      @order.Cancelled!
+      redirect_to admin_dashboard_path
+    end
+
+    def complete
+      @order = Order.find(params[:order])
+      @order.Completed!
+      redirect_to admin_dashboard_path
     end
 
 end
