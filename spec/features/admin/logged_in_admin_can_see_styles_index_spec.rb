@@ -32,7 +32,7 @@ describe "Unauthorized user cannot visit admin dashboard" do
       end
       visit "/admin/dashboard"
 
-      expect(page).to have_content("The page you were looking for doesn't exist.")
+      expect(page).to have_content("Party foul!")
     end
   end
 end
@@ -43,7 +43,7 @@ describe "Unregistered user cannot visit admin dashboard" do
 
       visit "/admin/dashboard"
 
-      expect(page).to have_content("The page you were looking for doesn't exist.")
+      expect(page).to have_content("Party foul!")
     end
   end
 end
