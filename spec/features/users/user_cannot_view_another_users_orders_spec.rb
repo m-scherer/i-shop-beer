@@ -15,10 +15,10 @@ describe "when a user views their orders" do
         click_on "Login"
       end
 
-      visit "/users/#{user.id}/orders/#{order.id}"
+      visit user_order_path(user, order)
       expect(page).to have_content(order.id)
 
-      visit "/users/#{user.id}/orders/#{order_1.id}"
+      visit user_order_path(user, order_1)
       expect(page).to have_content((404))
     end
   end

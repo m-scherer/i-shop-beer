@@ -16,7 +16,7 @@ describe "as a logged in admin" do
         click_on "Login"
       end
 
-      visit '/admin/beers'
+      visit admin_beers_path
       expect(page).to have_content("PBR")
 
     end
