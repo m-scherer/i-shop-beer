@@ -54,6 +54,6 @@ describe "a user receives is re-routed when they enter an invalid URL path" do
 
     visit("/foo")
 
-    expect(page).to have_content("The page you were looking for doesn't exist.")
+    expect(page).to have_content("Party foul!")
   end
 end

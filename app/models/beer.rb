@@ -9,7 +9,7 @@ class Beer < ActiveRecord::Base
 
   def self.search(argument)
     if argument
-      where("name LIKE ?", "%#{argument}%")
+      where("lower(name) LIKE ?", "%#{argument.downcase}%")
     else
       Beer.all
     end
