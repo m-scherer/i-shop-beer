@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   namespace :admin do
     get '/dashboard', to: 'dashboard#show'
     resources :users, only: [:edit, :update]
+    resources :beers, only: [:index, :edit, :update]
   end
 
 end

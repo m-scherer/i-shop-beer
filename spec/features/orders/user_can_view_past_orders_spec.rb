@@ -18,18 +18,11 @@ describe  "As a logged in user" do
       visit beers_path
       click_button "Add to Cart"
       visit cart_path
-      click_on "Place Order"
+      click_on "Checkout"
 
       visit orders_path
 
       expect(page).to have_content(user.orders.first.id)
-
-      click_on user.orders.first.id
-
-      expect(current_path).to eq(user_order_path(user, Order.all.first))
-      expect(page).to have_content(beer.name)
-      expect(page).to have_content(beer.price)
-      expect(page).to have_content(order.created_at)
     end
   end
   context "with no placed orders" do
@@ -48,4 +41,5 @@ describe  "As a logged in user" do
       expect(page).to have_content("No previous orders")
     end
   end
+
 end

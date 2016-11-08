@@ -1,0 +1,6 @@
+<p> Order Date: <%= @order.created_at %> </p>
+<% if @order.order_status == "Cancelled" || @order.order_status == "Completed" %>
+  <p> Last Updated: <%= @order.updated_at %> </p>
+  <p> Order Status: <%= @order.order_status %> </p>
+<% end %>
+<p> Order Total: <%= number_to_currency(@total) %> </p>

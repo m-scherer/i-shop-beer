@@ -20,8 +20,6 @@ describe 'admin visits admin dashboard' do
 
     click_on "Update Account"
 
-    save_and_open_page
-
     expect(page).to have_content("santa@santa.com")
   end
 

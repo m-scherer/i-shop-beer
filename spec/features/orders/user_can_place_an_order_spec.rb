@@ -6,18 +6,19 @@ describe  'As a logged in user' do
       style = Style.create(name: "IPA")
       beer = Beer.create(name: "Pallet Jack", style: style, price: 5.00)
       user = User.create(email: "brad@yahoo.com", password: "pass")
+      order = Order.new(user: user)
 
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
       visit style_beers_path(style, beer)
       click_button "Add to Cart"
       visit cart_path
-      click_on "Place Order"
+      click_on "Checkout"
 
-      expect(current_path).to eq(user_order_path(user, Order.all.last))
-      expect(page).to have_content(beer.name)
-      expect(page).to have_content("Quantity: 1")
-      expect(page).to have_content(beer.price)
+      expect(current_path).to eq(orders_path)
+      expect(page).to have_content(order.id)
+      expect(page).to have_content(order.created_at)
+      expect(page).to have_content(order.created_at)
     end
   end
 
@@ -29,7 +30,7 @@ describe  'As a logged in user' do
 
       visit cart_path
 
-      expect(page).to have_button("Place Order", disabled: true)
+      expect(page).to have_button("Checkout", disabled: true)
     end
   end
 end

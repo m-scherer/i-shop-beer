@@ -15,7 +15,7 @@
     <td><%= beer.name %></td>
     <td><%= @cart.contents[beer.id.to_s] %></td>
     <td><span class="glyphicon glyphicon-align-left" aria-label="Left Align" data-toggle="tooltip" data-placement="top" title="<%= beer.description %>"></span></td>
-   <td>$<%= beer.price %></td>
+   <td><%= number_to_currency(beer.price) %></td>
    <td><%= cart_row_subtotal(beer) %></td>
    <td><%= form_tag cart_update_path(:beer => beer.id) do %>
     <%= select_tag :quantity, options_for_select((0..99)) %>
@@ -28,7 +28,7 @@
     <td><div class="cart-total">Total: <%= number_to_currency(cart_total) %></td></div>
   </div>
     <td><% if logged_in? %>
-      <%= button_to "Place Order", user_orders_path(current_user), disabled: disable_place_order_button, class:"btn btn-secondary" %>
+      <%= button_to "Checkout", user_orders_path(current_user), disabled: disable_place_order_button, class:"btn btn-secondary" %>
     <% end %>
     <% if logged_in?.nil? %>
       <p> To checkout, <%= link_to "Log In", login_path %> or <%= link_to "Create Account", new_user_path %> </p>
