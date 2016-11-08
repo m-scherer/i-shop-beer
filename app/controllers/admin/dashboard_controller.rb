@@ -10,7 +10,6 @@ class Admin::DashboardController < Admin::BaseController
 
   def update
     @user = User.find(current_user.id)
-
   end
 
 end
