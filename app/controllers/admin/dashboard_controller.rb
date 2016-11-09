@@ -20,6 +20,11 @@ class Admin::DashboardController < Admin::BaseController
     redirect_to admin_dashboard_path
   end
 
+
+  def update
+    @user = User.find(current_user.id)
+  end
+  
   def cancel
     @order = Order.find(params[:order])
     @order.Cancelled!

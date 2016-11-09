@@ -15,3 +15,5 @@ end
 BEERS.each do |beer|
     Beer.create!(name:beer, price:PRICES.sample, style:Style.find_by(name: STYLES.sample), image:IMAGE.sample, description:DESCRIPTION.sample, status:0)
 end
+
+User.create(email: "admin@admin.com" password: "test" role: 1, first_name: "admin", last_name: "admin", address: "1234 Street")
