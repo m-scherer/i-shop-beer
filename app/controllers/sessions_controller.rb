@@ -1,28 +1,12 @@
 class SessionsController < ApplicationController
+  include SessionsHelper
 
   def new
 
   end
 
   def create
-    @user = User.find_by(email: params[:email])
-    if @user.nil?
-      flash[:danger] = "Please enter a valid email!"
-      render :new
-    elsif @user && @user.authenticate(params[:password]) == false
-      flash[:danger] = "Password invalid!"
-      render :new
-    elsif @user.authenticate(params[:password]) && @user.admin?
-      session[:user_id] = @user.id
-      flash[:success] = "Logged in as #{@user.email}"
-      redirect_to admin_dashboard_path
-    elsif @user.authenticate(params[:password])
-      session[:user_id] = @user.id
-      flash[:success] = "Logged in as #{@user.email}"
-      redirect_to beers_path
-    else
-      render :new
-    end
+    user_action
   end
 
   def destroy
