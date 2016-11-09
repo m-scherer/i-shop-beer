@@ -29,12 +29,16 @@ Rails.application.routes.draw do
 
   root to: 'sessions#new'
 
-  get '/:slug' => 'styles#show'
-
   namespace :admin do
     get '/dashboard', to: 'dashboard#show'
     post '/dashboard/paid', to: 'dashboard#paid', as: 'order_paid'
     post '/dashboard/cancel', to: 'dashboard#cancel', as: 'order_cancel'
     post '/dashboard/complete', to: 'dashboard#complete', as: 'order_complete'
+
+    resources :users, only: [:edit, :update]
+    resources :beers, only: [:index, :edit, :update]
   end
+  
+  get '/:slug' => 'styles#show'
+
 end

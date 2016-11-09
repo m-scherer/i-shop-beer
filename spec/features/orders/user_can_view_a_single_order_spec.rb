@@ -64,6 +64,7 @@ describe  "As a logged in user" do
       order.Cancelled!
 
       visit user_order_path(user, order)
+
       expect(page).to have_content("Order Status: Cancelled")
       expect(page).to have_content("Last Updated: #{order.updated_at}")
     end

@@ -1,0 +1,23 @@
+<h2>Edit Your Beer</h2>
+
+<%= form_for(@beer, url: admin_beer_path(@beer)) do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.collection_select(:style_id, @styles, :id, :name) %>
+
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+
+  <%= f.label :out_of_stock? %>
+  <%= f.check_box(:status, options = {}, checked_value = "out_of_stock", unchecked_value = "instock")%>
+
+<%= f.submit %>
+<% end %>

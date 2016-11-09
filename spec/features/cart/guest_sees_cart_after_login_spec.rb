@@ -19,7 +19,9 @@ describe "Guest user" do
       end
 
       visit cart_path
+
       expect(page).to have_content("Pallet Jack")
+      expect(page).to have_button("Checkout")
     end
 
     it "can create an account and see cart data" do

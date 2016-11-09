@@ -1,3 +1,13 @@
+body.orders {
+  background-image: url(<%= asset_path 'copper-kettle.jpg' %>);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
  body.sessions {
    background-image: url(<%= asset_path 'copper-kettle.jpg' %>);
    background-repeat: no-repeat;
@@ -124,4 +134,7 @@
     transform-origin: 50% 100%;
     -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
     animation: swinging 3.5s ease-in-out forwards infinite;
+}
+#user-edit {
+  color: black;
 }

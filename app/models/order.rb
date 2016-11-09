@@ -21,8 +21,4 @@ class Order < ActiveRecord::Base
     created_at.to_date
   end
 
-  # def change_status(status)
-  #   .status!
-  # end
-
 end

@@ -1,6 +1,5 @@
 class Admin::DashboardController < Admin::BaseController
 
-
   def show
     if params[:status] == "Ordered"
       @orders = Order.where(order_status: 0)
@@ -15,22 +14,22 @@ class Admin::DashboardController < Admin::BaseController
     end
   end
 
-    def paid
-      @order = Order.find(params[:order])
-      @order.Paid!
-      redirect_to admin_dashboard_path
-    end
+  def paid
+    @order = Order.find(params[:order])
+    @order.Paid!
+    redirect_to admin_dashboard_path
+  end
 
-    def cancel
-      @order = Order.find(params[:order])
-      @order.Cancelled!
-      redirect_to admin_dashboard_path
-    end
+  def cancel
+    @order = Order.find(params[:order])
+    @order.Cancelled!
+    redirect_to admin_dashboard_path
+  end
 
-    def complete
-      @order = Order.find(params[:order])
-      @order.Completed!
-      redirect_to admin_dashboard_path
-    end
+  def complete
+    @order = Order.find(params[:order])
+    @order.Completed!
+    redirect_to admin_dashboard_path
+  end
 
 end
