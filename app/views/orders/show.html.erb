@@ -1,20 +1,28 @@
-<div class="container-fluid">
-  <h1>Order #<%= @order.id %></h1>
-</div>
-<div class="container-fluid">
+<div class="panel panel-default">
+  <div class="panel-heading">Order #<%= @order.id %></div>
+  <table class="table">
+  <tr>
+    <th>Beer</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    <th>Subtotal</th>
+  </tr>
   <% @order.beers.each do |beer| %>
-  <%= link_to beer.name, beer_path(beer) %>
-  <ul>
-    <li>Price: <%= number_to_currency(beer.price) %></li>
-    <li>Quantity: <%= beer.get_beer_order(@order) %></li>
-    <li>Subtotal: <%= number_to_currency(beer.get_subtotal(@order)) %></li>
-  </ul>
-    <% end %>
-</div>
+  <tr>
+    <td> <%= link_to beer.name, beer_path(beer) %> </td>
+    <td><%= beer.get_beer_order(@order) %></td>
+    <td><%= number_to_currency(beer.price) %></td>
+    <td><%= number_to_currency(beer.get_subtotal(@order)) %></td>
+   <% end %>
+ </tr>
+ </table>
+ <br>
 
+<div class="container">
  <% if current_user.admin? %>
   <%= render partial: "user_order" %>
   <%= render partial: "admin_order" %>
   <% else %>
   <%= render partial: "user_order" %>
  <% end %>
+</div>
