@@ -75,7 +75,6 @@ describe  "As a logged in user" do
       order = Order.create(user: user)
       BeerOrder.create(beer: beer, order: order, quantity: 1)
 
-
       visit '/login'
       fill_in "email", with: user.email
       fill_in "password", with: user.password

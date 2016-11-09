@@ -1,4 +1,76 @@
 <h1>Admin Dashboard</h1>
+
+<div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        Filter By Status <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li><%= link_to "Ordered", admin_dashboard_path(status: "Ordered")%></li>
+        <li><%= link_to "Paid", admin_dashboard_path(status: "Paid")%></li>
+        <li><%= link_to "Cancelled", admin_dashboard_path(status: "Cancelled")%></li>
+        <li><%= link_to "Completed", admin_dashboard_path(status: "Completed")%></li>
+        <li class="divider"></li>
+        <li><%= link_to "All", admin_dashboard_path %></li>
+      </ul>
+    </div>
+
+    <table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Customer Email</th>
+      <th>Date Placed</th>
+      <th>Status</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @orders.each do |order| %>
+    <tr>
+      <td><%= link_to "#{order.id}", user_order_path(order.user, order) %></td>
+      <td><%= order.user.email %></td>
+      <td><%= order.format_created_by %></td>
+      <td id="order_status"><%= order.order_status %></td>
+      <% if order.order_status == "Paid" || order.order_status == "Ordered" %>
+      <td>
+          <%= button_to "Cancel", admin_order_cancel_path(order: order), class: "btn btn-danger"  %>
+      </td>
+      <% else %>
+      <td>
+          <%= button_to "Cancel", admin_order_cancel_path(order: order), disabled: true, class: "btn btn-danger"  %>
+      </td>
+    <% end %>
+    <% if order.order_status == "Ordered" %>
+    <td>
+        <%= button_to "Mark As Paid", admin_order_paid_path(order: order), class: "btn btn-success" %>
+    </td>
+    <% else %>
+    <td><%= button_to "Mark As Paid", admin_order_paid_path(order: order), disabled: true, class: "btn btn-success" %></td>
+  <% end %>
+  <% if order.order_status == "Paid" %>
+  <td>
+      <%= button_to "Mark As Completed", admin_order_complete_path(order: order), class: "btn btn-info"  %>
+  </td>
+  <% else %>
+  <td>
+    <%= button_to "Mark As Completed", admin_order_complete_path(order: order), disabled: true, class: "btn btn-info"  %>
+</td>
+<% end %>
+  </tr>
+    <% end %>
+    <tr>
+      <td> Total: <%= @orders.count %> </td>
+      <td>
+      </td>
+      <td>
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
 <br>
 <h3> Email: <%= current_user.email %></h3>
 <%= link_to "Edit Admin User Info", edit_admin_user_path(current_user.id), class: "btn btn-primary" %>

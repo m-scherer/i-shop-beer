@@ -18,8 +18,8 @@ describe "when a user views their orders" do
       visit user_order_path(user, order)
       expect(page).to have_content(order.id)
 
-      visit user_order_path(user, order_1)
-      expect(page).to have_content((404))
+      visit user_order_path(user_1, order_1)
+      expect(page).to have_content("Party foul!")
     end
   end
 end
