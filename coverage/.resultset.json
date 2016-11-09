@@ -337,6 +337,25 @@
         null,
         null
       ],
+      "/Users/brad/turing/1608/i-shop-beer/app/helpers/dashboard_helper.rb": [
+        1,
+        null,
+        1,
+        14,
+        0,
+        14,
+        1,
+        13,
+        0,
+        13,
+        0,
+        null,
+        13,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/brad/turing/1608/i-shop-beer/app/helpers/sessions_helper.rb": [
         1,
         null,
@@ -1964,19 +1983,10 @@
       ],
       "/Users/brad/turing/1608/i-shop-beer/app/controllers/admin/dashboard_controller.rb": [
         1,
+        1,
         null,
         1,
         14,
-        0,
-        14,
-        1,
-        13,
-        0,
-        13,
-        0,
-        null,
-        13,
-        null,
         null,
         null,
         1,
@@ -2178,6 +2188,6 @@
         null
       ]
     },
-    "timestamp": 1478724677
+    "timestamp": 1478726115
   }
 }
