@@ -41,6 +41,7 @@ describe 'As a logged in admin' do
       visit admin_dashboard_path(@admin)
       click_button "Filter By Status"
       click_on "Paid"
+      
       expect(page).to have_link("#{@order2.id}")
       expect(page).to_not have_link("#{@order.id}")
 

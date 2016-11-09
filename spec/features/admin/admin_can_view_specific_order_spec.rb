@@ -29,7 +29,7 @@ describe  'As a logged in admin' do
       expect(page).to have_content("Price: $5.00")
       expect(page).to have_content("Subtotal: $5.00")
       expect(page).to have_content("Order Total: $5.00")
-      expect(page).to have_content("Order Status: ordered")
+      expect(page).to have_content("Order Status: Ordered")
 
     end
   end

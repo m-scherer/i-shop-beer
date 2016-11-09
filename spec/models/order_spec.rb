@@ -53,29 +53,29 @@ RSpec.describe Order, type: :model do
         user = User.create(email: "brad@yahoo.com", password: "pass")
         order = Order.create(user: user)
 
-        expect(order.order_status).to eq("ordered")
+        expect(order.order_status).to eq("Ordered")
       end
       it "can cancel an order" do
         user = User.create(email: "brad@yahoo.com", password: "pass")
         order = Order.create(user: user)
 
-        order.cancelled!
-        expect(order.order_status).to eq("cancelled")
+        order.Cancelled!
+        expect(order.order_status).to eq("Cancelled")
       end
       it "can complete an order" do
         user = User.create(email: "brad@yahoo.com", password: "pass")
         order = Order.create(user: user)
 
-        order.completed!
-        expect(order.order_status).to eq("completed")
+        order.Completed!
+        expect(order.order_status).to eq("Completed")
 
       end
       it "can mark an order as paid" do
         user = User.create(email: "brad@yahoo.com", password: "pass")
         order = Order.create(user: user)
 
-        order.paid!
-        expect(order.order_status).to eq("paid")
+        order.Paid!
+        expect(order.order_status).to eq("Paid")
       end
     end
 

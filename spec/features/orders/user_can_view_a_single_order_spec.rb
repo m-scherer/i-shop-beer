@@ -40,11 +40,11 @@ describe  "As a logged in user" do
         click_on "Login"
       end
 
-      order.completed!
+      order.Completed!
 
       visit user_order_path(user, order)
 
-      expect(page).to have_content("Order Status: completed")
+      expect(page).to have_content("Order Status: Completed")
       expect(page).to have_content("Last Updated: #{order.updated_at}")
     end
     it "shows completed order status and date" do
@@ -61,11 +61,10 @@ describe  "As a logged in user" do
         click_on "Login"
       end
 
-      order.cancelled!
+      order.Cancelled!
 
       visit user_order_path(user, order)
-
-      expect(page).to have_content("Order Status: cancelled")
+      expect(page).to have_content("Order Status: Cancelled")
       expect(page).to have_content("Last Updated: #{order.updated_at}")
     end
     it "doesn't show timestamp when not completed or cancelled" do
@@ -74,7 +73,6 @@ describe  "As a logged in user" do
       user = User.create(email: "brad@yahoo.com", password: "pass")
       order = Order.create(user: user)
       BeerOrder.create(beer: beer, order: order, quantity: 1)
-
 
       visit '/login'
       fill_in "email", with: user.email
