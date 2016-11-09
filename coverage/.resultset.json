@@ -1,14 +1,30 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/controllers/beers_controller_spec.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/controllers/beers_controller_spec.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/controllers/beers_controller_spec.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/rails_helper.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/rails_helper.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/rails_helper.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         null,
         1,
         1,
@@ -67,14 +83,30 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/environment.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/environment.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/environment.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         null,
         1,
         null,
         null,
         1
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/application.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/application.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/application.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -111,12 +143,28 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/boot.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/boot.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/boot.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/environments/test.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/environments/test.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/environments/test.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         null,
@@ -160,7 +208,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/initializers/assets.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/assets.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/initializers/assets.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         null,
         null,
         null,
@@ -173,7 +229,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/initializers/backtrace_silencers.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/backtrace_silencers.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/initializers/backtrace_silencers.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         null,
         null,
         null,
@@ -182,18 +246,42 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/initializers/cookies_serializer.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/cookies_serializer.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/initializers/cookies_serializer.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         null,
         null,
         1
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/initializers/filter_parameter_logging.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/filter_parameter_logging.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/initializers/filter_parameter_logging.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         null,
         null,
         null,
         1
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/initializers/inflections.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/inflections.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/initializers/inflections.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         null,
         null,
         null,
@@ -211,18 +299,42 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/initializers/mime_types.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/mime_types.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/initializers/mime_types.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         null,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/initializers/session_store.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/session_store.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/initializers/session_store.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         null,
         null,
         1
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/initializers/wrap_parameters.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/wrap_parameters.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/initializers/wrap_parameters.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         null,
         null,
         null,
@@ -238,7 +350,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/factories/beer_orders.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/factories/beer_orders.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/factories/beer_orders.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         1,
         1,
@@ -246,14 +366,30 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/factories/orders.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/factories/orders.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/factories/orders.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         1,
         1,
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/factories/users.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/factories/users.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/factories/users.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         1,
         1,
@@ -261,7 +397,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/config/routes.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/config/routes.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/config/routes.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -307,7 +451,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/app/helpers/application_helper.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/app/helpers/application_helper.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/app/helpers/application_helper.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -330,13 +482,36 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/app/helpers/beers_helper.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/app/helpers/beers_helper.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/app/helpers/beers_helper.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         1,
         9,
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/app/helpers/styles_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/support/factory_girl.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/app/helpers/styles_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/support/factory_girl.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/app/helpers/dashboard_helper.rb": [
         1,
         null,
@@ -403,6 +578,7 @@
         null
       ],
       "/Users/brad/turing/1608/i-shop-beer/spec/support/factory_girl.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         1,
         1,
@@ -415,7 +591,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/app/controllers/beers_controller.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/beers_controller.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/app/controllers/beers_controller.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -428,7 +612,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/app/controllers/application_controller.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/application_controller.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/app/controllers/application_controller.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         null,
@@ -448,7 +640,7 @@
         null,
         null,
         1,
-        328,
+        356,
         null,
         null,
         1,
@@ -472,14 +664,30 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/controllers/styles_controller_spec.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/controllers/styles_controller_spec.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/controllers/styles_controller_spec.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/app/controllers/styles_controller.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/styles_controller.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/app/controllers/styles_controller.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -496,7 +704,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/features/admin/admin_can_change_order_status_spec.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/admin_can_change_order_status_spec.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/admin_can_change_order_status_spec.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -582,7 +798,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/features/admin/admin_can_change_own_data_spec.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/admin_can_change_own_data_spec.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/admin_can_change_own_data_spec.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -610,7 +834,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/features/admin/admin_can_view_specific_order_spec.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/admin_can_view_specific_order_spec.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/admin_can_view_specific_order_spec.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -644,11 +876,23 @@
         1,
         1,
         null,
+<<<<<<< HEAD
         null,
         null,
         null
       ],
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/features/admin/admin_sees_list_of_orders_spec.rb": [
+=======
+        null,
+        null,
+        null
+      ],
+<<<<<<< HEAD
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/admin_sees_list_of_orders_spec.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/admin_sees_list_of_orders_spec.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -716,7 +960,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/features/admin/admin_sees_orders_by_status_spec.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/admin_sees_orders_by_status_spec.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/admin_sees_orders_by_status_spec.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -854,7 +1106,15 @@
         null,
         null,
         null,
+<<<<<<< HEAD
         1,
+        1,
+=======
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+        1,
+        null,
+        1,
+        null,
         1,
         1,
         null,
@@ -865,7 +1125,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/features/beers/user_can_visit_beer_index_spec.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/beers/user_can_visit_beer_index_spec.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/features/beers/user_can_visit_beer_index_spec.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -953,7 +1221,15 @@
         null,
         null
       ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+      "/Users/Junta/Desktop/Projects/i-shop-beer/spec/features/cart/guest_sees_cart_after_login_spec.rb": [
+=======
+      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/cart/guest_sees_cart_after_login_spec.rb": [
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
       "/Users/brad/turing/1608/i-shop-beer/spec/features/cart/guest_sees_cart_after_login_spec.rb": [
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
         1,
         null,
         1,
@@ -985,12 +1261,21 @@
         1,
         1,
         1,
+<<<<<<< HEAD
         null,
         1,
         1,
         null,
         1,
         1,
+=======
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
         1,
         1,
         1,
@@ -2188,6 +2473,14 @@
         null
       ]
     },
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "timestamp": 1478723808
+=======
+    "timestamp": 1478710437
+>>>>>>> a6cc0e57a0a8e21a75215058a0c9e2e21e9463a6
+=======
     "timestamp": 1478726115
+>>>>>>> 8c1cffeaace45286ded578b883a28505106012cd
   }
 }
