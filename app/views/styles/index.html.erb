@@ -4,11 +4,10 @@
 </ol>
 <h1>All Styles</h1>
 
-
-<div class="row" id="style-index">
+<h2>
+<div class="row col-sm-3" id="style-index">
   <% @styles.each do |style| %>
-  <div class="col-sm-3">
-    <%= link_to style.name, "/#{style.slug}" %>
+    <%= link_to style.name, "/#{style.slug}", class: "style_link" %><br>
   <% end %>
   </div>
-</div>
+</h2>
