@@ -20,7 +20,6 @@ describe  'As a logged in admin' do
       end
 
       visit user_order_path(user, order)
-      save_and_open_page
 
       expect(page).to have_content("Order Date: #{order.created_at}")
       expect(page).to have_content("Brad")
