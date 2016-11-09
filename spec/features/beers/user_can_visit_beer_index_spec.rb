@@ -15,7 +15,7 @@ describe Beer do
   context "user experience on beer show page" do
     scenario "a user can view beer show page from beer index" do
       style = Style.new(name: "IPA")
-      beer = Beer.create(name: "Pliny the Elder", style: style, price: 7.00, description: "Tasty beer", image: "https://s3-us-west-1.amazonaws.com/i-shop-beer/beers/images/000/000/027/original/8569838733.png")
+      beer = Beer.create(name: "Pliny the Elder", style: style, price: 7.00, description: "Tasty beer")
 
       visit beers_path
       click_on(beer.name)
