@@ -11,7 +11,7 @@
   </tr>
   <% cart_beers.each do |beer| %>
   <tr>
-    <td><%= image_tag(beer.image, :height => '25', :width => '40') %></td>
+    <td><%= image_tag(beer.image.url, :height => '25', :width => '40') %></td>
     <td><%= beer.name %></td>
     <td><%= @cart.contents[beer.id.to_s] %></td>
     <td><span class="glyphicon glyphicon-align-left" aria-label="Left Align" data-toggle="tooltip" data-placement="top" title="<%= beer.description %>"></span></td>

@@ -9,7 +9,6 @@ describe  "As a logged in user" do
       order = Order.create(user: user)
       BeerOrder.create(beer: beer, order: order, quantity: 1)
 
-
       visit '/login'
       fill_in "email", with: user.email
       fill_in "password", with: user.password
@@ -18,10 +17,10 @@ describe  "As a logged in user" do
       end
 
       visit user_order_path(user, order)
-
       expect(page).to have_content("Pallet Jack")
-      expect(page).to have_content("Price: $5.00")
-      expect(page).to have_content("Subtotal: $5.00")
+      within(".table") do
+      expect(page).to have_content("$5.00")
+      end
       expect(page).to have_content("Order Date: #{order.created_at}")
       expect(page).to have_content("Order Total: $5.00")
     end

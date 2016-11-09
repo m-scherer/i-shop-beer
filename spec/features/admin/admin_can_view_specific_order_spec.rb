@@ -10,7 +10,7 @@ describe  'As a logged in admin' do
       user = User.create(email: "brad@brad.com", password: "pass", first_name: "Brad",
                          last_name: "Green", address: "1510 Blake St")
       order = Order.create(user: user)
-      BeerOrder.create(beer: beer, order: order, quantity: 1)
+      BeerOrder.create(beer: beer, order: order, quantity: 2)
 
       visit "/login"
       fill_in "email", with: admin.email
@@ -26,9 +26,13 @@ describe  'As a logged in admin' do
       expect(page).to have_content("Green")
       expect(page).to have_content("1510 Blake St")
       expect(page).to have_link("Pliny the Elder")
-      expect(page).to have_content("Price: $5.00")
-      expect(page).to have_content("Subtotal: $5.00")
-      expect(page).to have_content("Order Total: $5.00")
+
+      within(".table") do
+      expect(page).to have_content("$5.00")
+      expect(page).to have_content("$10.00")
+      end
+
+      expect(page).to have_content("Order Total: $10.00")
       expect(page).to have_content("Order Status: Ordered")
 
     end

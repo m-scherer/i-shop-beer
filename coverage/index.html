@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-11-09T14:57:31-07:00">2016-11-09T14:57:31-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-11-09T16:00:10-07:00">2016-11-09T16:00:10-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">93.84%</span></span>
+    (<span class="covered_percent"><span class="green">93.85%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.72
+         2.99
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>70</b> files in total.
-    <b>1137</b> relevant lines. 
-    <span class="green"><b>1067</b> lines covered</span> and
+    <b>1139</b> relevant lines. 
+    <span class="green"><b>1069</b> lines covered</span> and
     <span class="red"><b>70</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -97,7 +97,7 @@
         <td>20</td>
         <td>20</td>
         <td>0</td>
-        <td>51.8</td>
+        <td>67.2</td>
       </tr>
       
       <tr>
@@ -223,7 +223,7 @@
       <tr>
         <td class="strong"><a href="#25d41ede6cc63c745f790f5eec3ed88de4e6990c" class="src_link" title="app/models/beer.rb">app/models/beer.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>36</td>
+        <td>37</td>
         <td>18</td>
         <td>18</td>
         <td>0</td>
@@ -483,9 +483,9 @@
       <tr>
         <td class="strong"><a href="#832a00e27114fe9d1b354aff7f98e119c38a57b4" class="src_link" title="spec/features/admin/admin_can_view_specific_order_spec.rb">spec/features/admin/admin_can_view_specific_order_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>36</td>
-        <td>25</td>
-        <td>25</td>
+        <td>41</td>
+        <td>27</td>
+        <td>27</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -603,7 +603,7 @@
       <tr>
         <td class="strong"><a href="#1876896c439f42f9d524b37c04f4e459b1e57ea6" class="src_link" title="spec/features/orders/user_can_view_a_single_order_spec.rb">spec/features/orders/user_can_view_a_single_order_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>91</td>
+        <td>90</td>
         <td>63</td>
         <td>63</td>
         <td>0</td>
@@ -1530,8 +1530,8 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="356" data-linenumber="20">
-          <span class="hits">356</span>
+        <li class="covered" data-hits="544" data-linenumber="20">
+          <span class="hits">544</span>
           
           <code class="ruby">    @current_user ||= User.find(session[:user_id]) if session[:user_id]</code>
         </li>
@@ -1638,8 +1638,8 @@
           <code class="ruby">  def current_admin?</code>
         </li>
       
-        <li class="covered" data-hits="23" data-linenumber="38">
-          <span class="hits">23</span>
+        <li class="covered" data-hits="143" data-linenumber="38">
+          <span class="hits">143</span>
           
           <code class="ruby">    current_user &amp;&amp; current_user.admin?</code>
         </li>
@@ -3351,55 +3351,55 @@
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">  def self.search(argument)</code>
+          <code class="ruby">  enum status: { instock: 0 , out_of_stock: 1 }</code>
         </li>
       
-        <li class="covered" data-hits="36" data-linenumber="19">
-          <span class="hits">36</span>
-          
-          <code class="ruby">    if argument</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      where(&quot;lower(name) LIKE ?&quot;, &quot;%#{argument.downcase}%&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="covered" data-hits="34" data-linenumber="22">
-          <span class="hits">34</span>
-          
-          <code class="ruby">      Beer.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">  enum status: { instock: 0 , out_of_stock: 1 }</code>
+          <code class="ruby">  def self.search(argument)</code>
+        </li>
+      
+        <li class="covered" data-hits="36" data-linenumber="21">
+          <span class="hits">36</span>
+          
+          <code class="ruby">    if argument</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="22">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      where(&quot;lower(name) LIKE ?&quot;, &quot;%#{argument.downcase}%&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="34" data-linenumber="24">
+          <span class="hits">34</span>
+          
+          <code class="ruby">      Beer.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
@@ -3408,55 +3408,61 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
           <code class="ruby">  def get_beer_order(order)</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="29">
+        <li class="covered" data-hits="22" data-linenumber="30">
           <span class="hits">22</span>
           
           <code class="ruby">    beer_orders.find_by(order: order).quantity</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
           <code class="ruby">  def get_subtotal(order)</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="33">
+        <li class="covered" data-hits="15" data-linenumber="34">
           <span class="hits">15</span>
           
           <code class="ruby">    price * get_beer_order(order)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby">end</code>
@@ -6357,8 +6363,8 @@
     <h3>spec/features/admin/admin_can_view_specific_order_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>25</b> relevant lines. 
-      <span class="green"><b>25</b> lines covered</span> and
+      <b>27</b> relevant lines. 
+      <span class="green"><b>27</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -6441,7 +6447,7 @@
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">      BeerOrder.create(beer: beer, order: order, quantity: 1)</code>
+          <code class="ruby">      BeerOrder.create(beer: beer, order: order, quantity: 2)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
@@ -6498,85 +6504,115 @@
           <code class="ruby">      visit user_order_path(user, order)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      save_and_open_page</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(page).to have_content(&quot;Order Date: #{order.created_at}&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content(&quot;Brad&quot;)</code>
+          <code class="ruby">      expect(page).to have_content(&quot;Order Date: #{order.created_at}&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content(&quot;Green&quot;)</code>
+          <code class="ruby">      expect(page).to have_content(&quot;Brad&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content(&quot;1510 Blake St&quot;)</code>
+          <code class="ruby">      expect(page).to have_content(&quot;Green&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_link(&quot;Pliny the Elder&quot;)</code>
+          <code class="ruby">      expect(page).to have_content(&quot;1510 Blake St&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content(&quot;Price: $5.00&quot;)</code>
+          <code class="ruby">      expect(page).to have_link(&quot;Pliny the Elder&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(page).to have_content(&quot;Subtotal: $5.00&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="31">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(page).to have_content(&quot;Order Total: $5.00&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="32">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      expect(page).to have_content(&quot;Order Status: Ordered&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      within(&quot;.table&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content(&quot;$5.00&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content(&quot;$10.00&quot;)</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="34">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content(&quot;Order Total: $10.00&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content(&quot;Order Status: Ordered&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">end</code>
@@ -9876,136 +9912,136 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
           <code class="ruby">      visit &#39;/login&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">      fill_in &quot;email&quot;, with: user.email</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
           <code class="ruby">      fill_in &quot;password&quot;, with: user.password</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">      within(&quot;.form-horizontal&quot;) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">        click_on &quot;Login&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">      visit user_order_path(user, order)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(page).to have_content(&quot;Pallet Jack&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content(&quot;Price: $5.00&quot;)</code>
+          <code class="ruby">      within(&quot;.table&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(page).to have_content(&quot;$5.00&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">      end</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content(&quot;Subtotal: $5.00&quot;)</code>
+          <code class="ruby">      expect(page).to have_content(&quot;Order Date: #{order.created_at}&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(page).to have_content(&quot;Order Date: #{order.created_at}&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
-          
           <code class="ruby">      expect(page).to have_content(&quot;Order Total: $5.00&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
           <code class="ruby">    it &quot;shows completed order status and date&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="29">
+        <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
           <code class="ruby">      style = Style.create(name: &quot;IPA&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
           <code class="ruby">      beer = Beer.create(name: &quot;Pallet Jack&quot;, style: style, price: 5.00)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
+        <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
           <code class="ruby">      user = User.create(email: &quot;brad@yahoo.com&quot;, password: &quot;pass&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
           <code class="ruby">      order = Order.create(user: user)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="33">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">      BeerOrder.create(beer: beer, order: order, quantity: 1)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
@@ -10014,343 +10050,337 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">      visit &#39;/login&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
-          <code class="ruby">      visit &#39;/login&#39;</code>
+          <code class="ruby">      fill_in &quot;email&quot;, with: user.email</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">      fill_in &quot;email&quot;, with: user.email</code>
+          <code class="ruby">      fill_in &quot;password&quot;, with: user.password</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">      fill_in &quot;password&quot;, with: user.password</code>
+          <code class="ruby">      within(&quot;.form-horizontal&quot;) do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">      within(&quot;.form-horizontal&quot;) do</code>
+          <code class="ruby">        click_on &quot;Login&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="40">
           
-          <code class="ruby">        click_on &quot;Login&quot;</code>
+          
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="42">
           <span class="hits">1</span>
           
           <code class="ruby">      order.Completed!</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
           <code class="ruby">      visit user_order_path(user, order)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
+        <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(page).to have_content(&quot;Order Status: Completed&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
+        <li class="covered" data-hits="1" data-linenumber="47">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(page).to have_content(&quot;Last Updated: #{order.updated_at}&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="50">
+        <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
           <code class="ruby">    it &quot;shows completed order status and date&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="51">
+        <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
           <code class="ruby">      style = Style.create(name: &quot;IPA&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      beer = Beer.create(name: &quot;Pallet Jack&quot;, style: style, price: 5.00)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
-          <code class="ruby">      beer = Beer.create(name: &quot;Pallet Jack&quot;, style: style, price: 5.00)</code>
+          <code class="ruby">      user = User.create(email: &quot;brad@yahoo.com&quot;, password: &quot;pass&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
-          <code class="ruby">      user = User.create(email: &quot;brad@yahoo.com&quot;, password: &quot;pass&quot;)</code>
+          <code class="ruby">      order = Order.create(user: user)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">      order = Order.create(user: user)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="55">
-          <span class="hits">1</span>
-          
           <code class="ruby">      BeerOrder.create(beer: beer, order: order, quantity: 1)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      visit &#39;/login&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="57">
           <span class="hits">1</span>
           
-          <code class="ruby">      visit &#39;/login&#39;</code>
+          <code class="ruby">      fill_in &quot;email&quot;, with: user.email</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
-          <code class="ruby">      fill_in &quot;email&quot;, with: user.email</code>
+          <code class="ruby">      fill_in &quot;password&quot;, with: user.password</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="59">
           <span class="hits">1</span>
           
-          <code class="ruby">      fill_in &quot;password&quot;, with: user.password</code>
+          <code class="ruby">      within(&quot;.form-horizontal&quot;) do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
-          <code class="ruby">      within(&quot;.form-horizontal&quot;) do</code>
+          <code class="ruby">        click_on &quot;Login&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="61">
           
-          <code class="ruby">        click_on &quot;Login&quot;</code>
+          
+          <code class="ruby">      end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="63">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
+        <li class="covered" data-hits="1" data-linenumber="63">
           <span class="hits">1</span>
           
           <code class="ruby">      order.Cancelled!</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="66">
+        <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
           <code class="ruby">      visit user_order_path(user, order)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
+        <li class="never" data-hits="" data-linenumber="66">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
+        <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(page).to have_content(&quot;Order Status: Cancelled&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="69">
+        <li class="covered" data-hits="1" data-linenumber="68">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(page).to have_content(&quot;Last Updated: #{order.updated_at}&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="71">
+        <li class="covered" data-hits="1" data-linenumber="70">
           <span class="hits">1</span>
           
           <code class="ruby">    it &quot;doesn&#39;t show timestamp when not completed or cancelled&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="72">
+        <li class="covered" data-hits="1" data-linenumber="71">
           <span class="hits">1</span>
           
           <code class="ruby">      style = Style.create(name: &quot;IPA&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="73">
+        <li class="covered" data-hits="1" data-linenumber="72">
           <span class="hits">1</span>
           
           <code class="ruby">      beer = Beer.create(name: &quot;Pallet Jack&quot;, style: style, price: 5.00)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="74">
+        <li class="covered" data-hits="1" data-linenumber="73">
           <span class="hits">1</span>
           
           <code class="ruby">      user = User.create(email: &quot;brad@yahoo.com&quot;, password: &quot;pass&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="75">
+        <li class="covered" data-hits="1" data-linenumber="74">
           <span class="hits">1</span>
           
           <code class="ruby">      order = Order.create(user: user)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="76">
+        <li class="covered" data-hits="1" data-linenumber="75">
           <span class="hits">1</span>
           
           <code class="ruby">      BeerOrder.create(beer: beer, order: order, quantity: 1)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="76">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="78">
+        <li class="covered" data-hits="1" data-linenumber="77">
           <span class="hits">1</span>
           
           <code class="ruby">      visit &#39;/login&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="79">
+        <li class="covered" data-hits="1" data-linenumber="78">
           <span class="hits">1</span>
           
           <code class="ruby">      fill_in &quot;email&quot;, with: user.email</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="80">
+        <li class="covered" data-hits="1" data-linenumber="79">
           <span class="hits">1</span>
           
           <code class="ruby">      fill_in &quot;password&quot;, with: user.password</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="81">
+        <li class="covered" data-hits="1" data-linenumber="80">
           <span class="hits">1</span>
           
           <code class="ruby">      within(&quot;.form-horizontal&quot;) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="82">
+        <li class="covered" data-hits="1" data-linenumber="81">
           <span class="hits">1</span>
           
           <code class="ruby">        click_on &quot;Login&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="83">
+        <li class="never" data-hits="" data-linenumber="82">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="84">
+        <li class="never" data-hits="" data-linenumber="83">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="85">
+        <li class="covered" data-hits="1" data-linenumber="84">
           <span class="hits">1</span>
           
           <code class="ruby">      visit user_order_path(user, order)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="86">
+        <li class="never" data-hits="" data-linenumber="85">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="87">
+        <li class="covered" data-hits="1" data-linenumber="86">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(page).to_not have_content(&quot;Last Updated: &quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
+        <li class="never" data-hits="" data-linenumber="87">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="89">
+        <li class="never" data-hits="" data-linenumber="88">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="90">
+        <li class="never" data-hits="" data-linenumber="89">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="91">
+        <li class="never" data-hits="" data-linenumber="90">
           
           
           <code class="ruby">end</code>
