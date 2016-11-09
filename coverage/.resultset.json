@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/controllers/beers_controller_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/controllers/beers_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/rails_helper.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -67,14 +67,14 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/environment.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/application.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/application.rb": [
         1,
         null,
         1,
@@ -111,12 +111,12 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/boot.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/environments/test.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/environments/test.rb": [
         1,
         null,
         null,
@@ -160,7 +160,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/assets.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -173,7 +173,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/backtrace_silencers.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -182,18 +182,18 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/cookies_serializer.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/filter_parameter_logging.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/inflections.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -211,18 +211,18 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/mime_types.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/session_store.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/initializers/wrap_parameters.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -238,7 +238,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/factories/beer_orders.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/factories/beer_orders.rb": [
         1,
         1,
         1,
@@ -246,14 +246,14 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/factories/orders.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/factories/orders.rb": [
         1,
         1,
         1,
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/factories/users.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/factories/users.rb": [
         1,
         1,
         1,
@@ -261,7 +261,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/config/routes.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/config/routes.rb": [
         1,
         null,
         1,
@@ -307,7 +307,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/helpers/application_helper.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/helpers/application_helper.rb": [
         1,
         null,
         1,
@@ -330,18 +330,60 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/helpers/beers_helper.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/helpers/beers_helper.rb": [
         1,
         1,
         9,
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/helpers/styles_helper.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/helpers/sessions_helper.rb": [
+        1,
+        null,
+        1,
+        22,
+        22,
+        1,
+        21,
+        1,
+        20,
+        9,
+        11,
+        11,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        9,
+        9,
+        9,
+        null,
+        null,
+        1,
+        11,
+        11,
+        11,
+        null,
+        null,
+        null
+      ],
+      "/Users/brad/turing/1608/i-shop-beer/app/helpers/styles_helper.rb": [
         1,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/support/factory_girl.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/support/factory_girl.rb": [
         1,
         1,
         1,
@@ -354,7 +396,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/beers_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/beers_controller.rb": [
         1,
         null,
         1,
@@ -367,7 +409,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/application_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -411,14 +453,14 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/controllers/styles_controller_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/controllers/styles_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/styles_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/styles_controller.rb": [
         1,
         null,
         1,
@@ -435,7 +477,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/admin_can_change_order_status_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/admin_can_change_order_status_spec.rb": [
         1,
         null,
         1,
@@ -521,7 +563,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/admin_can_change_own_data_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/admin_can_change_own_data_spec.rb": [
         1,
         null,
         1,
@@ -549,7 +591,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/admin_can_view_specific_order_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/admin_can_view_specific_order_spec.rb": [
         1,
         null,
         1,
@@ -587,7 +629,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/admin_sees_list_of_orders_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/admin_sees_list_of_orders_spec.rb": [
         1,
         null,
         1,
@@ -655,7 +697,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/admin_sees_orders_by_status_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/admin_sees_orders_by_status_spec.rb": [
         1,
         null,
         1,
@@ -707,7 +749,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/logged_in_admin_can_edit_items_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/logged_in_admin_can_edit_items_spec.rb": [
         1,
         null,
         1,
@@ -753,7 +795,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/admin/logged_in_admin_can_see_styles_index_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/admin/logged_in_admin_can_see_styles_index_spec.rb": [
         1,
         null,
         1,
@@ -804,7 +846,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/beers/user_can_visit_beer_index_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/beers/user_can_visit_beer_index_spec.rb": [
         1,
         null,
         1,
@@ -832,7 +874,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/models/beer.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/models/beer.rb": [
         1,
         1,
         1,
@@ -870,7 +912,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/beers/users_cannot_order_unavailable_beers_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/beers/users_cannot_order_unavailable_beers_spec.rb": [
         1,
         null,
         1,
@@ -892,7 +934,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/cart/guest_sees_cart_after_login_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/cart/guest_sees_cart_after_login_spec.rb": [
         1,
         null,
         1,
@@ -954,7 +996,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/cart/user_adds_beer_to_cart_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/cart/user_adds_beer_to_cart_spec.rb": [
         1,
         null,
         1,
@@ -982,7 +1024,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/cart/user_cannot_checkout_if_not_logged_in_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/cart/user_cannot_checkout_if_not_logged_in_spec.rb": [
         1,
         null,
         1,
@@ -1019,7 +1061,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/cart/user_views_cart_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/cart/user_views_cart_spec.rb": [
         1,
         null,
         1,
@@ -1111,7 +1153,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/orders/user_can_place_an_order_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/orders/user_can_place_an_order_spec.rb": [
         1,
         null,
         1,
@@ -1149,7 +1191,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/orders/user_can_view_a_single_order_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/orders/user_can_view_a_single_order_spec.rb": [
         1,
         null,
         1,
@@ -1242,7 +1284,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/orders/user_can_view_past_orders_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/orders/user_can_view_past_orders_spec.rb": [
         1,
         null,
         1,
@@ -1289,7 +1331,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/sessions/logged_in_user_doesnt_see_login_form_at_root_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/sessions/logged_in_user_doesnt_see_login_form_at_root_spec.rb": [
         1,
         null,
         1,
@@ -1324,7 +1366,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/styles/user_can_visit_styles_index_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/styles/user_can_visit_styles_index_spec.rb": [
         1,
         null,
         1,
@@ -1385,7 +1427,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/users/guest_can_create_user_account_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/users/guest_can_create_user_account_spec.rb": [
         1,
         null,
         1,
@@ -1405,7 +1447,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/users/user_can_log_in_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/users/user_can_log_in_spec.rb": [
         1,
         null,
         1,
@@ -1454,7 +1496,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/features/users/user_cannot_view_another_users_orders_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/features/users/user_cannot_view_another_users_orders_spec.rb": [
         1,
         null,
         1,
@@ -1481,7 +1523,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/models/beer_order_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/models/beer_order_spec.rb": [
         1,
         null,
         1,
@@ -1501,13 +1543,13 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/models/beer_order.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/models/beer_order.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/models/beer_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/models/beer_spec.rb": [
         1,
         null,
         1,
@@ -1603,7 +1645,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/models/cart_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/models/cart_spec.rb": [
         1,
         null,
         1,
@@ -1654,7 +1696,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/models/cart.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/models/cart.rb": [
         1,
         1,
         null,
@@ -1681,7 +1723,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/models/order_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/models/order_spec.rb": [
         1,
         null,
         1,
@@ -1765,7 +1807,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/models/order.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/models/order.rb": [
         1,
         1,
         1,
@@ -1791,7 +1833,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/models/style_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/models/style_spec.rb": [
         1,
         null,
         1,
@@ -1819,7 +1861,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/models/style.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/models/style.rb": [
         1,
         1,
         null,
@@ -1833,7 +1875,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/spec/models/user_spec.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -1886,7 +1928,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/models/user.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/models/user.rb": [
         1,
         1,
         null,
@@ -1901,7 +1943,8 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/sessions_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/sessions_controller.rb": [
+        1,
         1,
         null,
         1,
@@ -1910,23 +1953,6 @@
         null,
         1,
         22,
-        22,
-        1,
-        1,
-        21,
-        1,
-        1,
-        20,
-        9,
-        9,
-        9,
-        11,
-        11,
-        11,
-        11,
-        null,
-        0,
-        null,
         null,
         null,
         1,
@@ -1936,7 +1962,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/admin/dashboard_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/admin/dashboard_controller.rb": [
         1,
         null,
         1,
@@ -1978,7 +2004,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/admin/base_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/admin/base_controller.rb": [
         1,
         1,
         null,
@@ -1988,7 +2014,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/admin/users_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/admin/users_controller.rb": [
         1,
         null,
         1,
@@ -2016,7 +2042,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/orders_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/orders_controller.rb": [
         1,
         null,
         1,
@@ -2048,7 +2074,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/admin/beers_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/admin/beers_controller.rb": [
         1,
         null,
         1,
@@ -2079,7 +2105,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/cart_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/cart_controller.rb": [
         1,
         null,
         1,
@@ -2115,7 +2141,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/users_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -2142,7 +2168,7 @@
         null,
         null
       ],
-      "/Users/NMartinez/module_2/projects/i-shop-beer/app/controllers/dashboard_controller.rb": [
+      "/Users/brad/turing/1608/i-shop-beer/app/controllers/dashboard_controller.rb": [
         1,
         null,
         1,
@@ -2152,6 +2178,6 @@
         null
       ]
     },
-    "timestamp": 1478710437
+    "timestamp": 1478724677
   }
 }
