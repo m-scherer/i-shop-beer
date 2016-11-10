@@ -2,7 +2,7 @@
     <h3> Update Admin User Information </h3>
   </div>
 
-  <div class="form-horizontal center-block">
+  <div class="form-horizontal center-block" id="login-form">
     <%= form_for [:admin, @user] do |f| %>
     <div class="form-group" id="email-group" >
       <label for="email" class="col-sm-3 control-label"><%= f.label :email %></label>
